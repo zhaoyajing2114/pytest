@@ -1,0 +1,811 @@
+{
+  "uid" : "b4841e8e5de73ee",
+  "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_new_defence_domain_repeat",
+  "historyId" : "af49fcac18651204480a31ac88fdd6c5",
+  "time" : {
+    "start" : 1607526319995,
+    "stop" : 1607526327500,
+    "duration" : 7505
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 实际上新增成功\nassert False",
+  "statusTrace" : "self = <test_ddos.Test_Ddos object at 0x0000018A959E7760>\ndefence_domain_name = '重复-多个单IP的防御域'\nips = '39.98.36.100\\n39.98.36.101\\n39.98.36.103\\n', alarm = '1'\nalarm_type = '100', cluster_name = '绍兴BGP集群', model_name = '模板1'\ncontect = '赵雅静', description = '多个中存在一个重复'\nbrowser = (<selenium.webdriver.chrome.webdriver.WebDriver (session=\"74df7305be2c343f9868d70963e14ec8\")>, {'ddos任务列表': <page.ddos...ww.lvluoyun.com', '0922.lvluoyun.com'], 'success_sign': 'ya-phone-fill', 'url': 'http://yundun.test.nodevops.cn', ...})\n\n    @allure.story('验证与已有防御域IP重复的不能新增成功')\n    @allure.severity(allure.severity_level.CRITICAL)\n    @pytest.mark.run(order=10)\n    #@pytest.mark.skip\n    @pytest.mark.parametrize(\n        \"defence_domain_name, ips, alarm, alarm_type, cluster_name, model_name, contect, description\",\n        [('重复-IP段格式的防御域', '39.98.36.1', '1', '1', '绍兴BGP集群', '模板1', '赵雅静', '从IP段格式的IP中取一个'),\n         ('重复-CIDR格式的防御域', '39.98.36.224-226', '1', '1', '绍兴BGP集群', '模板1', '赵雅静', '范围有交集'),\n         ('重复-单IP的防御域', '39.98.36.106', '1', '100', '绍兴BGP集群', '模板1', '赵雅静', '单个重复'),\n         ('重复-多个单IP的防御域', '39.98.36.100\\n'\n                       '39.98.36.101\\n'\n                       '39.98.36.103\\n', '1', '100', '绍兴BGP集群', '模板1', '赵雅静', '多个中存在一个重复')],\n    ids=[\"重复-IP段格式的防御域:从IP段格式的IP中取一个\",\"重复-CIDR格式的防御域:范围有交集\",\"重复-单IP的防御域\",\"重复-多个单IP的防御域:多个中存在一个重复\"])\n    def test_new_defence_domain_repeat(self, defence_domain_name, ips, alarm, alarm_type, cluster_name, model_name,\n                                        contect, description, browser):\n        driver = browser[0]\n        ddos_list = browser[1]['ddos任务列表']\n        ddos_list.refresh()\n        ddos_list.click_menu('业务列表')\n        ddos_list.click_new_domain()\n        # '填写防御域信息：防御域名称：{1} ;防御域IP：{2};告警阈值:{3};告警类型:{4};集群:{5};模板:{6};联系人:{7};描述:{8}'\n        ddos_list.fill_defence_domain(defence_domain_name, ips, alarm, alarm_type, cluster_name, model_name, contect,\n                                      description)\n        ddos_list.click_save()\n        result = ddos_list.get_warning_message('操作失败')\n        assert result, '重复的防御域增加成功'\n        ddos_list.refresh()\n        with allure.step('验证重复的IP不能新增成功'):\n            result_add = ddos_list.verify_element_not_exist('xpath','//div[contains(text(),\"%s\")]'%(defence_domain_name))\n>           assert result_add,'实际上新增成功'\nE           AssertionError: 实际上新增成功\nE           assert False\n\ntest_ddos.py:240: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607526122688,
+      "stop" : 1607526128006,
+      "duration" : 5318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 实际上新增成功\nassert False",
+    "statusTrace" : "self = <test_ddos.Test_Ddos object at 0x0000018A959E7760>\ndefence_domain_name = '重复-多个单IP的防御域'\nips = '39.98.36.100\\n39.98.36.101\\n39.98.36.103\\n', alarm = '1'\nalarm_type = '100', cluster_name = '绍兴BGP集群', model_name = '模板1'\ncontect = '赵雅静', description = '多个中存在一个重复'\nbrowser = (<selenium.webdriver.chrome.webdriver.WebDriver (session=\"74df7305be2c343f9868d70963e14ec8\")>, {'ddos任务列表': <page.ddos...ww.lvluoyun.com', '0922.lvluoyun.com'], 'success_sign': 'ya-phone-fill', 'url': 'http://yundun.test.nodevops.cn', ...})\n\n    @allure.story('验证与已有防御域IP重复的不能新增成功')\n    @allure.severity(allure.severity_level.CRITICAL)\n    @pytest.mark.run(order=10)\n    #@pytest.mark.skip\n    @pytest.mark.parametrize(\n        \"defence_domain_name, ips, alarm, alarm_type, cluster_name, model_name, contect, description\",\n        [('重复-IP段格式的防御域', '39.98.36.1', '1', '1', '绍兴BGP集群', '模板1', '赵雅静', '从IP段格式的IP中取一个'),\n         ('重复-CIDR格式的防御域', '39.98.36.224-226', '1', '1', '绍兴BGP集群', '模板1', '赵雅静', '范围有交集'),\n         ('重复-单IP的防御域', '39.98.36.106', '1', '100', '绍兴BGP集群', '模板1', '赵雅静', '单个重复'),\n         ('重复-多个单IP的防御域', '39.98.36.100\\n'\n                       '39.98.36.101\\n'\n                       '39.98.36.103\\n', '1', '100', '绍兴BGP集群', '模板1', '赵雅静', '多个中存在一个重复')],\n    ids=[\"重复-IP段格式的防御域:从IP段格式的IP中取一个\",\"重复-CIDR格式的防御域:范围有交集\",\"重复-单IP的防御域\",\"重复-多个单IP的防御域:多个中存在一个重复\"])\n    def test_new_defence_domain_repeat(self, defence_domain_name, ips, alarm, alarm_type, cluster_name, model_name,\n                                        contect, description, browser):\n        driver = browser[0]\n        ddos_list = browser[1]['ddos任务列表']\n        ddos_list.refresh()\n        ddos_list.click_menu('业务列表')\n        ddos_list.click_new_domain()\n        # '填写防御域信息：防御域名称：{1} ;防御域IP：{2};告警阈值:{3};告警类型:{4};集群:{5};模板:{6};联系人:{7};描述:{8}'\n        ddos_list.fill_defence_domain(defence_domain_name, ips, alarm, alarm_type, cluster_name, model_name, contect,\n                                      description)\n        ddos_list.click_save()\n        result = ddos_list.get_warning_message('操作失败')\n        assert result, '重复的防御域增加成功'\n        ddos_list.refresh()\n        with allure.step('验证重复的IP不能新增成功'):\n            result_add = ddos_list.verify_element_not_exist('xpath','//div[contains(text(),\"%s\")]'%(defence_domain_name))\n>           assert result_add,'实际上新增成功'\nE           AssertionError: 实际上新增成功\nE           assert False\n\ntest_ddos.py:240: AssertionError",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607526319995,
+        "stop" : 1607526322450,
+        "duration" : 2455
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'业务列表'",
+      "time" : {
+        "start" : 1607526322450,
+        "stop" : 1607526322534,
+        "duration" : 84
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607526322451,
+          "stop" : 1607526322465,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607526322465,
+          "stop" : 1607526322473,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"74df7305be2c343f9868d70963e14ec8\", element=\"23c3661c-84d7-4d5c-b1a9-d70d33b4f176\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"业务列表\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607526322473,
+          "stop" : 1607526322486,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"业务列表\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'业务列表'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "点击新增防御域",
+      "time" : {
+        "start" : 1607526322534,
+        "stop" : 1607526322677,
+        "duration" : 143
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"新增防御域\"]/..'",
+        "time" : {
+          "start" : 1607526322534,
+          "stop" : 1607526322547,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"新增防御域\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "填写防御域信息--'多个中存在一个重复'：防御域名称：'重复-多个单IP的防御域' ;防御域IP：'39.98.36.100\n39.98.36.101\n39.98.36.103\n';告警阈值:'1';告警类型:'100';集群:'绍兴BGP集群';模板:'模板1';联系人:'赵雅静';描述:'多个中存在一个重复'",
+      "time" : {
+        "start" : 1607526322678,
+        "stop" : 1607526324309,
+        "duration" : 1631
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"域名称\"]'",
+        "time" : {
+          "start" : 1607526322678,
+          "stop" : 1607526322696,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@placeholder=\"域名称\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//textarea[@placeholder=\"0.0.0.0\"]'",
+        "time" : {
+          "start" : 1607526322914,
+          "stop" : 1607526322929,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//textarea[@placeholder=\"0.0.0.0\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@aria-label=\"描述文字\"]'",
+        "time" : {
+          "start" : 1607526323397,
+          "stop" : 1607526323425,
+          "duration" : 28
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@aria-label=\"描述文字\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'(//div[@aria-label=\"checkbox-group\"]/label)[1]'",
+        "time" : {
+          "start" : 1607526323536,
+          "stop" : 1607526323551,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'(//div[@aria-label=\"checkbox-group\"]/label)[1]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'(//div[@aria-label=\"checkbox-group\"]/label)[2]'",
+        "time" : {
+          "start" : 1607526323551,
+          "stop" : 1607526323572,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'(//div[@aria-label=\"checkbox-group\"]/label)[2]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[contains(text(),\"清洗设备集群\")]/following-sibling::div[1]//i'",
+        "time" : {
+          "start" : 1607526323572,
+          "stop" : 1607526323587,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[contains(text(),\"清洗设备集群\")]/following-sibling::div[1]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"绍兴BGP集群\")]'",
+        "time" : {
+          "start" : 1607526323666,
+          "stop" : 1607526323683,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"绍兴BGP集群\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[contains(text(),\"引用配置模板\")]/following-sibling::div[1]//i'",
+        "time" : {
+          "start" : 1607526323734,
+          "stop" : 1607526323748,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[contains(text(),\"引用配置模板\")]/following-sibling::div[1]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"模板1\")]'",
+        "time" : {
+          "start" : 1607526323805,
+          "stop" : 1607526323820,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"模板1\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[contains(text(),\"告警联系人\")]/following-sibling::div[1]//i'",
+        "time" : {
+          "start" : 1607526323869,
+          "stop" : 1607526323895,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[contains(text(),\"告警联系人\")]/following-sibling::div[1]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"赵雅静\")]'",
+        "time" : {
+          "start" : 1607526323948,
+          "stop" : 1607526323969,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"赵雅静\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"描述\"]'",
+        "time" : {
+          "start" : 1607526324102,
+          "stop" : 1607526324123,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@placeholder=\"描述\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "defence_domain_name",
+        "value" : "'重复-多个单IP的防御域'"
+      }, {
+        "name" : "ips",
+        "value" : "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'"
+      }, {
+        "name" : "alarm",
+        "value" : "'1'"
+      }, {
+        "name" : "alarm_type",
+        "value" : "'100'"
+      }, {
+        "name" : "cluster_name",
+        "value" : "'绍兴BGP集群'"
+      }, {
+        "name" : "model_name",
+        "value" : "'模板1'"
+      }, {
+        "name" : "contect",
+        "value" : "'赵雅静'"
+      }, {
+        "name" : "description",
+        "value" : "'多个中存在一个重复'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 12,
+      "hasContent" : true
+    }, {
+      "name" : "点击创建防御域的保存",
+      "time" : {
+        "start" : 1607526324309,
+        "stop" : 1607526324432,
+        "duration" : 123
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"DmDialog\") and not(contains(@style,\"none\"))]/div[@aria-label=\"创建防御域\"]//span[text()=\"保存\"]/..'",
+        "time" : {
+          "start" : 1607526324313,
+          "stop" : 1607526324336,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"DmDialog\") and not(contains(@style,\"none\"))]/div[@aria-label=\"创建防御域\"]//span[text()=\"保存\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "获取提示信息",
+      "time" : {
+        "start" : 1607526324432,
+        "stop" : 1607526325061,
+        "duration" : 629
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "校验元素内容是否包含指定的内容:类型-'xpath'，定位：'//div[contains(@class,\"warning\")]//p'，内容：'操作失败'",
+        "time" : {
+          "start" : 1607526324433,
+          "stop" : 1607526325061,
+          "duration" : 628
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"warning\")]//p'",
+          "time" : {
+            "start" : 1607526324433,
+            "stop" : 1607526324948,
+            "duration" : 515
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"warning\")]//p'"
+          }, {
+            "name" : "time_wait",
+            "value" : "6"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"warning\")]//p'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'操作失败'"
+        }, {
+          "name" : "time_wait",
+          "value" : "6"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "'操作失败'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607526325061,
+        "stop" : 1607526327479,
+        "duration" : 2418
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "验证重复的IP不能新增成功",
+      "time" : {
+        "start" : 1607526327480,
+        "stop" : 1607526327500,
+        "duration" : 20
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: 实际上新增成功\nassert False\n",
+      "statusTrace" : "  File \"D:\\workspace\\pytest1\\test_ddos_page\\test_ddos.py\", line 240, in test_new_defence_domain_repeat\n    assert result_add,'实际上新增成功'\n",
+      "steps" : [ {
+        "name" : "校验界面上确定不存在某元素:类型-'xpath'，定位：'//div[contains(text(),\"重复-多个单IP的防御域\")]'",
+        "time" : {
+          "start" : 1607526327480,
+          "stop" : 1607526327500,
+          "duration" : 20
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找多个元素:类型-'xpath'，定位：'//div[contains(text(),\"重复-多个单IP的防御域\")]'",
+          "time" : {
+            "start" : 1607526327481,
+            "stop" : 1607526327500,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(text(),\"重复-多个单IP的防御域\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(text(),\"重复-多个单IP的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1607526327528,
+        "stop" : 1607526327892,
+        "duration" : 364
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "40bdac04b7f696c9",
+        "name" : "失败截图",
+        "source" : "40bdac04b7f696c9.png",
+        "type" : "image/png",
+        "size" : 127984
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 30,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607526622998,
+      "stop" : 1607526622998,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "验证与已有防御域IP重复的不能新增成功"
+  }, {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=10)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "19808-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "alarm",
+    "value" : "'1'"
+  }, {
+    "name" : "alarm_type",
+    "value" : "'100'"
+  }, {
+    "name" : "cluster_name",
+    "value" : "'绍兴BGP集群'"
+  }, {
+    "name" : "contect",
+    "value" : "'赵雅静'"
+  }, {
+    "name" : "defence_domain_name",
+    "value" : "'重复-多个单IP的防御域'"
+  }, {
+    "name" : "description",
+    "value" : "'多个中存在一个重复'"
+  }, {
+    "name" : "ips",
+    "value" : "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'"
+  }, {
+    "name" : "model_name",
+    "value" : "'模板1'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=10)" ]
+  },
+  "source" : "b4841e8e5de73ee.json",
+  "parameterValues" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+}

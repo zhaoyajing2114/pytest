@@ -1,0 +1,832 @@
+{
+  "uid" : "380cb652fb62eac1",
+  "name" : "test_add_device[45.250.34.131-1-60-60-1-1-赵雅静-描述]",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_add_device",
+  "historyId" : "544733bc5eb1301453cd273563e96c62",
+  "time" : {
+    "start" : 1607515064189,
+    "stop" : 1607515071430,
+    "duration" : 7241
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607514565063,
+      "stop" : 1607514570425,
+      "duration" : 5362
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607515064192,
+        "stop" : 1607515066742,
+        "duration" : 2550
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'集群管理'",
+      "time" : {
+        "start" : 1607515066743,
+        "stop" : 1607515066832,
+        "duration" : 89
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607515066743,
+          "stop" : 1607515066764,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607515066764,
+          "stop" : 1607515066773,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"b84888fb317d3b96d96e95761edd0686\", element=\"3dcd1530-d6c9-4c66-acc5-94f3245d4e22\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"集群管理\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607515066773,
+          "stop" : 1607515066781,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"集群管理\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'集群管理'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "点击配置设备",
+      "time" : {
+        "start" : 1607515066832,
+        "stop" : 1607515067942,
+        "duration" : 1110
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(text(),\"绍兴BGP集群\")]/ancestor::tr//a[contains(text(),\"配置设备\")]'",
+        "time" : {
+          "start" : 1607515066832,
+          "stop" : 1607515067832,
+          "duration" : 1000
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(text(),\"绍兴BGP集群\")]/ancestor::tr//a[contains(text(),\"配置设备\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "cluster_name",
+        "value" : "'绍兴BGP集群'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击新增设备",
+      "time" : {
+        "start" : 1607515067942,
+        "stop" : 1607515068032,
+        "duration" : 90
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"新增设备\"]/..'",
+        "time" : {
+          "start" : 1607515067942,
+          "stop" : 1607515067950,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"新增设备\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "填写设备表单",
+      "time" : {
+        "start" : 1607515068032,
+        "stop" : 1607515069683,
+        "duration" : 1651
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"0.0.0.0\"]'",
+        "time" : {
+          "start" : 1607515068032,
+          "stop" : 1607515068051,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@placeholder=\"0.0.0.0\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[text()=\"是否启用\"]/following::div[1]//div[contains(@class,\"el-switch\")]'",
+        "time" : {
+          "start" : 1607515068276,
+          "stop" : 1607515068283,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[text()=\"是否启用\"]/following::div[1]//div[contains(@class,\"el-switch\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "校验元素属性:类型-'xpath'，定位：'//label[text()=\"是否启用\"]/following::div[1]//div[contains(@class,\"el-switch\")]'，预期内容'checked'，属性：'className'",
+        "time" : {
+          "start" : 1607515068287,
+          "stop" : 1607515068413,
+          "duration" : 126
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//label[text()=\"是否启用\"]/following::div[1]//div[contains(@class,\"el-switch\")]'",
+          "time" : {
+            "start" : 1607515068287,
+            "stop" : 1607515068301,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//label[text()=\"是否启用\"]/following::div[1]//div[contains(@class,\"el-switch\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[text()=\"是否启用\"]/following::div[1]//div[contains(@class,\"el-switch\")]'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'checked'"
+        }, {
+          "name" : "attr",
+          "value" : "'className'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[text()=\"CPU使用率(%)\"]/following::div[1]//input'",
+        "time" : {
+          "start" : 1607515068413,
+          "stop" : 1607515068424,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[text()=\"CPU使用率(%)\"]/following::div[1]//input'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[text()=\"内存使用率(%)\"]/following::div[1]//input'",
+        "time" : {
+          "start" : 1607515068543,
+          "stop" : 1607515068550,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[text()=\"内存使用率(%)\"]/following::div[1]//input'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[text()=\"网卡故障\"]/following::div[1]//div[contains(@class,\"el-switch\")]'",
+        "time" : {
+          "start" : 1607515068683,
+          "stop" : 1607515068697,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[text()=\"网卡故障\"]/following::div[1]//div[contains(@class,\"el-switch\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "校验元素属性:类型-'xpath'，定位：'//label[text()=\"网卡故障\"]/following::div[1]//div[contains(@class,\"el-switch\")]'，预期内容'checked'，属性：'className'",
+        "time" : {
+          "start" : 1607515068697,
+          "stop" : 1607515069125,
+          "duration" : 428
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//label[text()=\"网卡故障\"]/following::div[1]//div[contains(@class,\"el-switch\")]'",
+          "time" : {
+            "start" : 1607515068697,
+            "stop" : 1607515068710,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//label[text()=\"网卡故障\"]/following::div[1]//div[contains(@class,\"el-switch\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "d2ee395b16778bce",
+          "name" : "预期文本与实际不同",
+          "source" : "d2ee395b16778bce.png",
+          "type" : "image/png",
+          "size" : 468
+        } ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[text()=\"网卡故障\"]/following::div[1]//div[contains(@class,\"el-switch\")]'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'checked'"
+        }, {
+          "name" : "attr",
+          "value" : "'className'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'(//div[@aria-label=\"checkbox-group\"]/label)[1]'",
+        "time" : {
+          "start" : 1607515069191,
+          "stop" : 1607515069204,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'(//div[@aria-label=\"checkbox-group\"]/label)[1]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'(//div[@aria-label=\"checkbox-group\"]/label)[2]'",
+        "time" : {
+          "start" : 1607515069204,
+          "stop" : 1607515069215,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'(//div[@aria-label=\"checkbox-group\"]/label)[2]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[contains(text(),\"告警联系人\")]/following-sibling::div[1]//i'",
+        "time" : {
+          "start" : 1607515069276,
+          "stop" : 1607515069288,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[contains(text(),\"告警联系人\")]/following-sibling::div[1]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"赵雅静\")]'",
+        "time" : {
+          "start" : 1607515069335,
+          "stop" : 1607515069348,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"赵雅静\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"创建设备\"]'",
+        "time" : {
+          "start" : 1607515069486,
+          "stop" : 1607515069495,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"创建设备\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"备注\"]'",
+        "time" : {
+          "start" : 1607515069550,
+          "stop" : 1607515069561,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@placeholder=\"备注\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "device_ip",
+        "value" : "'45.250.34.131'"
+      }, {
+        "name" : "start",
+        "value" : "1"
+      }, {
+        "name" : "cpu",
+        "value" : "'60'"
+      }, {
+        "name" : "mem",
+        "value" : "'60'"
+      }, {
+        "name" : "network_card",
+        "value" : "1"
+      }, {
+        "name" : "alarm_type",
+        "value" : "1"
+      }, {
+        "name" : "alarm_person",
+        "value" : "'赵雅静'"
+      }, {
+        "name" : "desc",
+        "value" : "'描述'"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 15,
+      "hasContent" : true
+    }, {
+      "name" : "点击创建设备的保存",
+      "time" : {
+        "start" : 1607515069683,
+        "stop" : 1607515069746,
+        "duration" : 63
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"DmDialog\") and not(contains(@style,\"none\"))]/div[@aria-label=\"创建设备\"]//span[text()=\"保存\"]/..'",
+        "time" : {
+          "start" : 1607515069683,
+          "stop" : 1607515069694,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"DmDialog\") and not(contains(@style,\"none\"))]/div[@aria-label=\"创建设备\"]//span[text()=\"保存\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "6"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "验证设备新增成功",
+      "time" : {
+        "start" : 1607515069746,
+        "stop" : 1607515071430,
+        "duration" : 1684
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//div[text()=\"45.250.34.131\"]'",
+        "time" : {
+          "start" : 1607515069746,
+          "stop" : 1607515071430,
+          "duration" : 1684
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找多个元素:类型-'xpath'，定位：'//div[text()=\"45.250.34.131\"]'",
+          "time" : {
+            "start" : 1607515069746,
+            "stop" : 1607515071430,
+            "duration" : 1684
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[text()=\"45.250.34.131\"]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "5"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[text()=\"45.250.34.131\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 30,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607515179020,
+      "stop" : 1607515179020,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "测试给启用集群新增设备"
+  }, {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=11)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "18160-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "alarm_person",
+    "value" : "'赵雅静'"
+  }, {
+    "name" : "alarm_type",
+    "value" : "1"
+  }, {
+    "name" : "cpu",
+    "value" : "'60'"
+  }, {
+    "name" : "desc",
+    "value" : "'描述'"
+  }, {
+    "name" : "device_ip",
+    "value" : "'45.250.34.131'"
+  }, {
+    "name" : "mem",
+    "value" : "'60'"
+  }, {
+    "name" : "network_card",
+    "value" : "1"
+  }, {
+    "name" : "start",
+    "value" : "1"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=11)" ]
+  },
+  "source" : "380cb652fb62eac1.json",
+  "parameterValues" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.131'", "'60'", "1", "1" ]
+}

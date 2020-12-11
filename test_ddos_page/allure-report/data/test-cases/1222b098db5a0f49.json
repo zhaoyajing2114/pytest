@@ -1,0 +1,1573 @@
+{
+  "uid" : "1222b098db5a0f49",
+  "name" : "test_modify_conf[模板1]",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_modify_conf",
+  "historyId" : "1080f18ddd6022b916bee3380b2bbf8e",
+  "time" : {
+    "start" : 1607516875951,
+    "stop" : 1607516895085,
+    "duration" : 19134
+  },
+  "status" : "broken",
+  "statusMessage" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=85.0.4183.102)",
+  "statusTrace" : "self = <test_ddos.Test_Ddos object at 0x000001605888E3D0>, model_name = '模板1'\nbrowser = (<selenium.webdriver.chrome.webdriver.WebDriver (session=\"4cc159a7e293460c8f896c5f30c1525e\")>, {'ddos任务列表': <page.ddos...ww.lvluoyun.com', '0922.lvluoyun.com'], 'success_sign': 'ya-phone-fill', 'url': 'http://yundun.test.nodevops.cn', ...})\n\n    @allure.story('测试修改配置模板之后，引用了配置模板的防御域的配置全部修改')\n    @allure.severity(allure.severity_level.CRITICAL)\n    @pytest.mark.run(order=17)\n    @pytest.mark.parametrize('model_name', ['模板1'])\n    # #@pytest.mark.skip\n    def test_modify_conf(self, model_name, browser):\n        driver = browser[0]\n        ddos_list = browser[1]['ddos任务列表']\n        ddos_cluster = browser[1]['ddos集群管理']\n        ddos_model = browser[1]['ddos配置模板']\n        ddos_conf = browser[1]['ddos策略配置']\n        ddos_list.refresh()\n        ddos_list.click_menu('配置模板')\n        ddos_model.click_modify_conf(model_name)\n        sleep(1)\n        ddos_conf.click_tcp_bps_limit_switch('ON')#将目的IP TCP限速 改成开启的状态\n        ddos_conf.modify_tcp_bps_limit('3000')#将目的IP tcp限速的值 改成3000\n        ddos_conf.click_save()\n        sleep(2)\n        ddos_conf.switch_to_UDP()#切换到UDP\n        ddos_conf.modify_udp_bps_threshold('100')#UDP Flood 防御 阈值\n        ddos_conf.modify_udp_bps_limit('100')#UDP Flood 防御 限速\n        ddos_conf.click_save()\n        sleep(3)\n        ddos_conf.switch_to_ICMP()\n        ddos_conf.modify_icmp_protection_switch('ON')#打开ICMP增强防御\n        ddos_conf.modify_src_icmp_stats_time('999')# ICMP Flood 防御\t时间\n        ddos_conf.modify_src_icmp_pps_min('999')#修改ICMP Flood 防御 阈值\n        ddos_conf.click_save()\n        sleep(2)\n        ddos_conf.switch_to_DNS()\n        ddos_conf.click_dns_protection_switch('ON')\n        ddos_conf.click_save()\n        sleep(2)\n        ddos_conf.switch_to_Other()\n        ddos_conf.modify_other_bps_threshold('100')\n>       ddos_conf.modify_other_bps_limit('100')\n\ntest_ddos.py:444: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\page\\ddos_conf.py:1093: in modify_other_bps_limit\n    ele.send_keys(other_bps_limit)\nD:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:477: in send_keys\n    self._execute(Command.SEND_KEYS_TO_ELEMENT,\nD:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:633: in _execute\n    return self._parent.execute(command, params)\nD:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001605744CD60>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element not interactable\",\"message\":\"element not interactable\\\\n  (Sessio...\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77BD75F4+228]\\\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77BD75C4+180]\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\nE         (Session info: chrome=85.0.4183.102)\n\nD:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:242: ElementNotInteractableException",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607516875951,
+      "stop" : 1607516875951,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=85.0.4183.102)",
+    "statusTrace" : "self = <test_ddos.Test_Ddos object at 0x000001605888E3D0>, model_name = '模板1'\nbrowser = (<selenium.webdriver.chrome.webdriver.WebDriver (session=\"4cc159a7e293460c8f896c5f30c1525e\")>, {'ddos任务列表': <page.ddos...ww.lvluoyun.com', '0922.lvluoyun.com'], 'success_sign': 'ya-phone-fill', 'url': 'http://yundun.test.nodevops.cn', ...})\n\n    @allure.story('测试修改配置模板之后，引用了配置模板的防御域的配置全部修改')\n    @allure.severity(allure.severity_level.CRITICAL)\n    @pytest.mark.run(order=17)\n    @pytest.mark.parametrize('model_name', ['模板1'])\n    # #@pytest.mark.skip\n    def test_modify_conf(self, model_name, browser):\n        driver = browser[0]\n        ddos_list = browser[1]['ddos任务列表']\n        ddos_cluster = browser[1]['ddos集群管理']\n        ddos_model = browser[1]['ddos配置模板']\n        ddos_conf = browser[1]['ddos策略配置']\n        ddos_list.refresh()\n        ddos_list.click_menu('配置模板')\n        ddos_model.click_modify_conf(model_name)\n        sleep(1)\n        ddos_conf.click_tcp_bps_limit_switch('ON')#将目的IP TCP限速 改成开启的状态\n        ddos_conf.modify_tcp_bps_limit('3000')#将目的IP tcp限速的值 改成3000\n        ddos_conf.click_save()\n        sleep(2)\n        ddos_conf.switch_to_UDP()#切换到UDP\n        ddos_conf.modify_udp_bps_threshold('100')#UDP Flood 防御 阈值\n        ddos_conf.modify_udp_bps_limit('100')#UDP Flood 防御 限速\n        ddos_conf.click_save()\n        sleep(3)\n        ddos_conf.switch_to_ICMP()\n        ddos_conf.modify_icmp_protection_switch('ON')#打开ICMP增强防御\n        ddos_conf.modify_src_icmp_stats_time('999')# ICMP Flood 防御\t时间\n        ddos_conf.modify_src_icmp_pps_min('999')#修改ICMP Flood 防御 阈值\n        ddos_conf.click_save()\n        sleep(2)\n        ddos_conf.switch_to_DNS()\n        ddos_conf.click_dns_protection_switch('ON')\n        ddos_conf.click_save()\n        sleep(2)\n        ddos_conf.switch_to_Other()\n        ddos_conf.modify_other_bps_threshold('100')\n>       ddos_conf.modify_other_bps_limit('100')\n\ntest_ddos.py:444: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n..\\page\\ddos_conf.py:1093: in modify_other_bps_limit\n    ele.send_keys(other_bps_limit)\nD:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:477: in send_keys\n    self._execute(Command.SEND_KEYS_TO_ELEMENT,\nD:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py:633: in _execute\n    return self._parent.execute(command, params)\nD:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py:321: in execute\n    self.error_handler.check_response(response)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x000001605744CD60>\nresponse = {'status': 400, 'value': '{\"value\":{\"error\":\"element not interactable\",\"message\":\"element not interactable\\\\n  (Sessio...\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77BD75F4+228]\\\\n\\\\tRtlGetAppContainerNamedObjectPath [0x77BD75C4+180]\\\\n\"}}'}\n\n    def check_response(self, response):\n        \"\"\"\n        Checks that a JSON response from the WebDriver does not have an error.\n    \n        :Args:\n         - response - The JSON response from the WebDriver server as a dictionary\n           object.\n    \n        :Raises: If the response contains an error message.\n        \"\"\"\n        status = response.get('status', None)\n        if status is None or status == ErrorCode.SUCCESS:\n            return\n        value = None\n        message = response.get(\"message\", \"\")\n        screen = response.get(\"screen\", \"\")\n        stacktrace = None\n        if isinstance(status, int):\n            value_json = response.get('value', None)\n            if value_json and isinstance(value_json, basestring):\n                import json\n                try:\n                    value = json.loads(value_json)\n                    if len(value.keys()) == 1:\n                        value = value['value']\n                    status = value.get('error', None)\n                    if status is None:\n                        status = value[\"status\"]\n                        message = value[\"value\"]\n                        if not isinstance(message, basestring):\n                            value = message\n                            message = message.get('message')\n                    else:\n                        message = value.get('message', None)\n                except ValueError:\n                    pass\n    \n        exception_class = ErrorInResponseException\n        if status in ErrorCode.NO_SUCH_ELEMENT:\n            exception_class = NoSuchElementException\n        elif status in ErrorCode.NO_SUCH_FRAME:\n            exception_class = NoSuchFrameException\n        elif status in ErrorCode.NO_SUCH_WINDOW:\n            exception_class = NoSuchWindowException\n        elif status in ErrorCode.STALE_ELEMENT_REFERENCE:\n            exception_class = StaleElementReferenceException\n        elif status in ErrorCode.ELEMENT_NOT_VISIBLE:\n            exception_class = ElementNotVisibleException\n        elif status in ErrorCode.INVALID_ELEMENT_STATE:\n            exception_class = InvalidElementStateException\n        elif status in ErrorCode.INVALID_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR \\\n                or status in ErrorCode.INVALID_XPATH_SELECTOR_RETURN_TYPER:\n            exception_class = InvalidSelectorException\n        elif status in ErrorCode.ELEMENT_IS_NOT_SELECTABLE:\n            exception_class = ElementNotSelectableException\n        elif status in ErrorCode.ELEMENT_NOT_INTERACTABLE:\n            exception_class = ElementNotInteractableException\n        elif status in ErrorCode.INVALID_COOKIE_DOMAIN:\n            exception_class = InvalidCookieDomainException\n        elif status in ErrorCode.UNABLE_TO_SET_COOKIE:\n            exception_class = UnableToSetCookieException\n        elif status in ErrorCode.TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.SCRIPT_TIMEOUT:\n            exception_class = TimeoutException\n        elif status in ErrorCode.UNKNOWN_ERROR:\n            exception_class = WebDriverException\n        elif status in ErrorCode.UNEXPECTED_ALERT_OPEN:\n            exception_class = UnexpectedAlertPresentException\n        elif status in ErrorCode.NO_ALERT_OPEN:\n            exception_class = NoAlertPresentException\n        elif status in ErrorCode.IME_NOT_AVAILABLE:\n            exception_class = ImeNotAvailableException\n        elif status in ErrorCode.IME_ENGINE_ACTIVATION_FAILED:\n            exception_class = ImeActivationFailedException\n        elif status in ErrorCode.MOVE_TARGET_OUT_OF_BOUNDS:\n            exception_class = MoveTargetOutOfBoundsException\n        elif status in ErrorCode.JAVASCRIPT_ERROR:\n            exception_class = JavascriptException\n        elif status in ErrorCode.SESSION_NOT_CREATED:\n            exception_class = SessionNotCreatedException\n        elif status in ErrorCode.INVALID_ARGUMENT:\n            exception_class = InvalidArgumentException\n        elif status in ErrorCode.NO_SUCH_COOKIE:\n            exception_class = NoSuchCookieException\n        elif status in ErrorCode.UNABLE_TO_CAPTURE_SCREEN:\n            exception_class = ScreenshotException\n        elif status in ErrorCode.ELEMENT_CLICK_INTERCEPTED:\n            exception_class = ElementClickInterceptedException\n        elif status in ErrorCode.INSECURE_CERTIFICATE:\n            exception_class = InsecureCertificateException\n        elif status in ErrorCode.INVALID_COORDINATES:\n            exception_class = InvalidCoordinatesException\n        elif status in ErrorCode.INVALID_SESSION_ID:\n            exception_class = InvalidSessionIdException\n        elif status in ErrorCode.UNKNOWN_METHOD:\n            exception_class = UnknownMethodException\n        else:\n            exception_class = WebDriverException\n        if value == '' or value is None:\n            value = response['value']\n        if isinstance(value, basestring):\n            if exception_class == ErrorInResponseException:\n                raise exception_class(response, value)\n            raise exception_class(value)\n        if message == \"\" and 'message' in value:\n            message = value['message']\n    \n        screen = None\n        if 'screen' in value:\n            screen = value['screen']\n    \n        stacktrace = None\n        if 'stackTrace' in value and value['stackTrace']:\n            stacktrace = []\n            try:\n                for frame in value['stackTrace']:\n                    line = self._value_or_default(frame, 'lineNumber', '')\n                    file = self._value_or_default(frame, 'fileName', '<anonymous>')\n                    if line:\n                        file = \"%s:%s\" % (file, line)\n                    meth = self._value_or_default(frame, 'methodName', '<anonymous>')\n                    if 'className' in frame:\n                        meth = \"%s.%s\" % (frame['className'], meth)\n                    msg = \"    at %s (%s)\"\n                    msg = msg % (meth, file)\n                    stacktrace.append(msg)\n            except TypeError:\n                pass\n        if exception_class == ErrorInResponseException:\n            raise exception_class(response, message)\n        elif exception_class == UnexpectedAlertPresentException:\n            alert_text = None\n            if 'data' in value:\n                alert_text = value['data'].get('text')\n            elif 'alert' in value:\n                alert_text = value['alert'].get('text')\n            raise exception_class(message, screen, stacktrace, alert_text)\n>       raise exception_class(message, screen, stacktrace)\nE       selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\nE         (Session info: chrome=85.0.4183.102)\n\nD:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py:242: ElementNotInteractableException",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607516875951,
+        "stop" : 1607516878355,
+        "duration" : 2404
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'配置模板'",
+      "time" : {
+        "start" : 1607516878355,
+        "stop" : 1607516878450,
+        "duration" : 95
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607516878355,
+          "stop" : 1607516878371,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607516878372,
+          "stop" : 1607516878377,
+          "duration" : 5
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"4cc159a7e293460c8f896c5f30c1525e\", element=\"7a0fcf98-268f-4851-90cb-d390e493195a\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"配置模板\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607516878377,
+          "stop" : 1607516878396,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"配置模板\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'配置模板'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "点击策略配置",
+      "time" : {
+        "start" : 1607516878450,
+        "stop" : 1607516879512,
+        "duration" : 1062
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//tr/td/div[text()=\"模板1\"]/../..//a[text()=\"策略配置\"]'",
+        "time" : {
+          "start" : 1607516878450,
+          "stop" : 1607516879277,
+          "duration" : 827
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tr/td/div[text()=\"模板1\"]/../..//a[text()=\"策略配置\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "model_name",
+        "value" : "'模板1'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "目的IP TCP限速",
+      "time" : {
+        "start" : 1607516880520,
+        "stop" : 1607516880687,
+        "duration" : 167
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"目的IP TCP限速\")]/../following-sibling::div[contains(@class,\"action\")]//div[contains(@class,\"input\")]//i'",
+        "time" : {
+          "start" : 1607516880520,
+          "stop" : 1607516880526,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"目的IP TCP限速\")]/../following-sibling::div[contains(@class,\"action\")]//div[contains(@class,\"input\")]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[not(contains(@style,\"none\")) and (@x-placement)]//li/span[contains(text(),\"ON\")]/..'",
+        "time" : {
+          "start" : 1607516880592,
+          "stop" : 1607516880610,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[not(contains(@style,\"none\")) and (@x-placement)]//li/span[contains(text(),\"ON\")]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "statue",
+        "value" : "'ON'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "修改目的IP tcp限速的值",
+      "time" : {
+        "start" : 1607516880687,
+        "stop" : 1607516880889,
+        "duration" : 202
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"目的IP TCP限速\")]/../following::form[1]//input'",
+        "time" : {
+          "start" : 1607516880687,
+          "stop" : 1607516880700,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"目的IP TCP限速\")]/../following::form[1]//input'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "tcp_bps_limit",
+        "value" : "'3000'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击保存",
+      "time" : {
+        "start" : 1607516880889,
+        "stop" : 1607516883340,
+        "duration" : 2451
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"保存\"]/..'",
+        "time" : {
+          "start" : 1607516880889,
+          "stop" : 1607516880908,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"保存\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取成功提示信息",
+        "time" : {
+          "start" : 1607516881005,
+          "stop" : 1607516883340,
+          "duration" : 2335
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "校验元素内容是否包含指定的内容:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'，内容：'操作成功'",
+          "time" : {
+            "start" : 1607516881005,
+            "stop" : 1607516883340,
+            "duration" : 2335
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'",
+            "time" : {
+              "start" : 1607516881005,
+              "stop" : 1607516883207,
+              "duration" : 2202
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//div[contains(@class,\"success\")]//p'"
+            }, {
+              "name" : "time_wait",
+              "value" : "6"
+            } ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"success\")]//p'"
+          }, {
+            "name" : "ele_text",
+            "value" : "'操作成功'"
+          }, {
+            "name" : "time_wait",
+            "value" : "6"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "'操作成功'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "切换到UDP的设置",
+      "time" : {
+        "start" : 1607516885345,
+        "stop" : 1607516885590,
+        "duration" : 245
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"UDP\")]'",
+        "time" : {
+          "start" : 1607516885346,
+          "stop" : 1607516885357,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//a[contains(text(),\"UDP\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "校验元素属性:类型-'xpath'，定位：'//a[contains(text(),\"UDP\")]'，预期内容'active'，属性：'className'",
+        "time" : {
+          "start" : 1607516885398,
+          "stop" : 1607516885590,
+          "duration" : 192
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"UDP\")]'",
+          "time" : {
+            "start" : 1607516885398,
+            "stop" : 1607516885476,
+            "duration" : 78
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//a[contains(text(),\"UDP\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//a[contains(text(),\"UDP\")]'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'active'"
+        }, {
+          "name" : "attr",
+          "value" : "'className'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "修改UDP Flood 防御 阈值",
+      "time" : {
+        "start" : 1607516885590,
+        "stop" : 1607516885711,
+        "duration" : 121
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"UDP Flood 防御\")]/../following::form[1]//label[text()=\"阈值\"]/following::input[1]'",
+        "time" : {
+          "start" : 1607516885590,
+          "stop" : 1607516885601,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"UDP Flood 防御\")]/../following::form[1]//label[text()=\"阈值\"]/following::input[1]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "udp_bps_threshold",
+        "value" : "'100'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "修改UDP Flood 防御 限速",
+      "time" : {
+        "start" : 1607516885711,
+        "stop" : 1607516885839,
+        "duration" : 128
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"UDP Flood 防御\")]/../following::form[1]//label[text()=\"限速\"]/following::input[1]'",
+        "time" : {
+          "start" : 1607516885711,
+          "stop" : 1607516885722,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"UDP Flood 防御\")]/../following::form[1]//label[text()=\"限速\"]/following::input[1]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "udp_bps_limit",
+        "value" : "'100'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击保存",
+      "time" : {
+        "start" : 1607516885839,
+        "stop" : 1607516886031,
+        "duration" : 192
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"保存\"]/..'",
+        "time" : {
+          "start" : 1607516885839,
+          "stop" : 1607516885849,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"保存\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取成功提示信息",
+        "time" : {
+          "start" : 1607516885901,
+          "stop" : 1607516886031,
+          "duration" : 130
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "校验元素内容是否包含指定的内容:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'，内容：'操作成功'",
+          "time" : {
+            "start" : 1607516885901,
+            "stop" : 1607516886031,
+            "duration" : 130
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'",
+            "time" : {
+              "start" : 1607516885901,
+              "stop" : 1607516885914,
+              "duration" : 13
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//div[contains(@class,\"success\")]//p'"
+            }, {
+              "name" : "time_wait",
+              "value" : "6"
+            } ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"success\")]//p'"
+          }, {
+            "name" : "ele_text",
+            "value" : "'操作成功'"
+          }, {
+            "name" : "time_wait",
+            "value" : "6"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "'操作成功'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "切换到ICMP的设置",
+      "time" : {
+        "start" : 1607516889043,
+        "stop" : 1607516889271,
+        "duration" : 228
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"ICMP\")]'",
+        "time" : {
+          "start" : 1607516889044,
+          "stop" : 1607516889055,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//a[contains(text(),\"ICMP\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "校验元素属性:类型-'xpath'，定位：'//a[contains(text(),\"ICMP\")]'，预期内容'active'，属性：'className'",
+        "time" : {
+          "start" : 1607516889103,
+          "stop" : 1607516889271,
+          "duration" : 168
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"ICMP\")]'",
+          "time" : {
+            "start" : 1607516889103,
+            "stop" : 1607516889156,
+            "duration" : 53
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//a[contains(text(),\"ICMP\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//a[contains(text(),\"ICMP\")]'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'active'"
+        }, {
+          "name" : "attr",
+          "value" : "'className'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "修改 ICMP Flood 防御  ICMP 增强防御",
+      "time" : {
+        "start" : 1607516889271,
+        "stop" : 1607516889290,
+        "duration" : 19
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"ICMP Flood 防御\")]/../following::form[2]//span[text()=\"ICMP 增强防御\"]/../span[1]'",
+        "time" : {
+          "start" : 1607516889271,
+          "stop" : 1607516889281,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"ICMP Flood 防御\")]/../following::form[2]//span[text()=\"ICMP 增强防御\"]/../span[1]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607516889281,
+          "stop" : 1607516889290,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"4cc159a7e293460c8f896c5f30c1525e\", element=\"fd2f856c-3554-4a6f-a744-e82fcf327fb0\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "syn_ack_port_filter_switch",
+        "value" : "'ON'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "修改 ICMP Flood 防御\t时间",
+      "time" : {
+        "start" : 1607516889290,
+        "stop" : 1607516889417,
+        "duration" : 127
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"ICMP Flood 防御\")]/../following::form[2]//span[text()=\"秒（范围：0-60）\"]/preceding-sibling::div[1]//input'",
+        "time" : {
+          "start" : 1607516889290,
+          "stop" : 1607516889299,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"ICMP Flood 防御\")]/../following::form[2]//span[text()=\"秒（范围：0-60）\"]/preceding-sibling::div[1]//input'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "src_icmp_stats_time",
+        "value" : "'999'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "修改ICMP Flood 防御 阈值",
+      "time" : {
+        "start" : 1607516889417,
+        "stop" : 1607516889535,
+        "duration" : 118
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"ICMP Flood 防御\")]/../following::form[2]//span[text()=\"个（阈值范围：0-1,000）\"]/preceding-sibling::div[1]//input'",
+        "time" : {
+          "start" : 1607516889417,
+          "stop" : 1607516889427,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"ICMP Flood 防御\")]/../following::form[2]//span[text()=\"个（阈值范围：0-1,000）\"]/preceding-sibling::div[1]//input'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "src_icmp_pps_min",
+        "value" : "'999'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击保存",
+      "time" : {
+        "start" : 1607516889535,
+        "stop" : 1607516889723,
+        "duration" : 188
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"保存\"]/..'",
+        "time" : {
+          "start" : 1607516889535,
+          "stop" : 1607516889548,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"保存\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取成功提示信息",
+        "time" : {
+          "start" : 1607516889591,
+          "stop" : 1607516889723,
+          "duration" : 132
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "校验元素内容是否包含指定的内容:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'，内容：'操作成功'",
+          "time" : {
+            "start" : 1607516889591,
+            "stop" : 1607516889723,
+            "duration" : 132
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'",
+            "time" : {
+              "start" : 1607516889591,
+              "stop" : 1607516889604,
+              "duration" : 13
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//div[contains(@class,\"success\")]//p'"
+            }, {
+              "name" : "time_wait",
+              "value" : "6"
+            } ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"success\")]//p'"
+          }, {
+            "name" : "ele_text",
+            "value" : "'操作成功'"
+          }, {
+            "name" : "time_wait",
+            "value" : "6"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "'操作成功'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "切换到DNS的设置",
+      "time" : {
+        "start" : 1607516891735,
+        "stop" : 1607516892082,
+        "duration" : 347
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"DNS\")]'",
+        "time" : {
+          "start" : 1607516891735,
+          "stop" : 1607516891760,
+          "duration" : 25
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//a[contains(text(),\"DNS\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "校验元素属性:类型-'xpath'，定位：'//a[contains(text(),\"DNS\")]'，预期内容'active'，属性：'className'",
+        "time" : {
+          "start" : 1607516891832,
+          "stop" : 1607516892082,
+          "duration" : 250
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"DNS\")]'",
+          "time" : {
+            "start" : 1607516891832,
+            "stop" : 1607516891956,
+            "duration" : 124
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//a[contains(text(),\"DNS\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//a[contains(text(),\"DNS\")]'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'active'"
+        }, {
+          "name" : "attr",
+          "value" : "'className'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "DNS 防御",
+      "time" : {
+        "start" : 1607516892082,
+        "stop" : 1607516892283,
+        "duration" : 201
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"DNS 防御\")]/../following-sibling::div[contains(@class,\"action\")]//div[contains(@class,\"input\")]//i'",
+        "time" : {
+          "start" : 1607516892082,
+          "stop" : 1607516892097,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"DNS 防御\")]/../following-sibling::div[contains(@class,\"action\")]//div[contains(@class,\"input\")]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[not(contains(@style,\"none\")) and (@x-placement)]//li/span[contains(text(),\"ON\")]/..'",
+        "time" : {
+          "start" : 1607516892145,
+          "stop" : 1607516892155,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[not(contains(@style,\"none\")) and (@x-placement)]//li/span[contains(text(),\"ON\")]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "statue",
+        "value" : "'ON'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "点击保存",
+      "time" : {
+        "start" : 1607516892283,
+        "stop" : 1607516892474,
+        "duration" : 191
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"保存\"]/..'",
+        "time" : {
+          "start" : 1607516892283,
+          "stop" : 1607516892299,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"保存\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取成功提示信息",
+        "time" : {
+          "start" : 1607516892346,
+          "stop" : 1607516892474,
+          "duration" : 128
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "校验元素内容是否包含指定的内容:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'，内容：'操作成功'",
+          "time" : {
+            "start" : 1607516892346,
+            "stop" : 1607516892474,
+            "duration" : 128
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'",
+            "time" : {
+              "start" : 1607516892346,
+              "stop" : 1607516892356,
+              "duration" : 10
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//div[contains(@class,\"success\")]//p'"
+            }, {
+              "name" : "time_wait",
+              "value" : "6"
+            } ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"success\")]//p'"
+          }, {
+            "name" : "ele_text",
+            "value" : "'操作成功'"
+          }, {
+            "name" : "time_wait",
+            "value" : "6"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "'操作成功'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "切换到Other的设置",
+      "time" : {
+        "start" : 1607516894480,
+        "stop" : 1607516894696,
+        "duration" : 216
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"Other\")]'",
+        "time" : {
+          "start" : 1607516894480,
+          "stop" : 1607516894492,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//a[contains(text(),\"Other\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "校验元素属性:类型-'xpath'，定位：'//a[contains(text(),\"Other\")]'，预期内容'active'，属性：'className'",
+        "time" : {
+          "start" : 1607516894538,
+          "stop" : 1607516894696,
+          "duration" : 158
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"Other\")]'",
+          "time" : {
+            "start" : 1607516894538,
+            "stop" : 1607516894581,
+            "duration" : 43
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//a[contains(text(),\"Other\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//a[contains(text(),\"Other\")]'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'active'"
+        }, {
+          "name" : "attr",
+          "value" : "'className'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "修改Other 防御 阈值",
+      "time" : {
+        "start" : 1607516894696,
+        "stop" : 1607516894816,
+        "duration" : 120
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"Other 防御\")]/../following::form[1]//label[text()=\"阈值\"]/following::input[1]'",
+        "time" : {
+          "start" : 1607516894696,
+          "stop" : 1607516894709,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"Other 防御\")]/../following::form[1]//label[text()=\"阈值\"]/following::input[1]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "other_bps_threshold",
+        "value" : "'100'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "修改Other 防御 限速",
+      "time" : {
+        "start" : 1607516894816,
+        "stop" : 1607516895085,
+        "duration" : 269
+      },
+      "status" : "broken",
+      "statusMessage" : "selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable\n  (Session info: chrome=85.0.4183.102)\n\n",
+      "statusTrace" : "  File \"D:\\software\\python\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"D:\\workspace\\pytest1\\page\\ddos_conf.py\", line 1093, in modify_other_bps_limit\n    ele.send_keys(other_bps_limit)\n  File \"D:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 477, in send_keys\n    self._execute(Command.SEND_KEYS_TO_ELEMENT,\n  File \"D:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webelement.py\", line 633, in _execute\n    return self._parent.execute(command, params)\n  File \"D:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\webdriver.py\", line 321, in execute\n    self.error_handler.check_response(response)\n  File \"D:\\software\\python\\lib\\site-packages\\selenium\\webdriver\\remote\\errorhandler.py\", line 242, in check_response\n    raise exception_class(message, screen, stacktrace)\n",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//h2[contains(text(),\"Other 防御\")]/../following::form[1]//label[text()=\"限速\"]/following::input[1]'",
+        "time" : {
+          "start" : 1607516894816,
+          "stop" : 1607516894824,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//h2[contains(text(),\"Other 防御\")]/../following::form[1]//label[text()=\"限速\"]/following::input[1]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "other_bps_limit",
+        "value" : "'100'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1607516895195,
+        "stop" : 1607516895547,
+        "duration" : 352
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d9b4a7284f1b9151",
+        "name" : "失败截图",
+        "source" : "d9b4a7284f1b9151.png",
+        "type" : "image/png",
+        "size" : 101268
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 67,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607516895557,
+      "stop" : 1607516895557,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "story",
+    "value" : "测试修改配置模板之后，引用了配置模板的防御域的配置全部修改"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=17)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "15284-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "model_name",
+    "value" : "'模板1'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=17)" ]
+  },
+  "source" : "1222b098db5a0f49.json",
+  "parameterValues" : [ "'模板1'" ]
+}

@@ -1,0 +1,180 @@
+{
+  "uid" : "b1a8273437954620fa374b796ffaacdd",
+  "name" : "behaviors",
+  "children" : [ {
+    "name" : "测试修改配置并校验配置是否生效",
+    "children" : [ {
+      "name" : "登录",
+      "children" : [ {
+        "name" : "test_login",
+        "uid" : "20be3178e1110fd2",
+        "parentUid" : "d6919d52717a0825bd1f0f6425ec194a",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513459670,
+          "stop" : 1607513467304,
+          "duration" : 7634
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d6919d52717a0825bd1f0f6425ec194a"
+    }, {
+      "name" : "批量修改回源请求时长-验证批量修改生效并且其他的参数不受影响",
+      "children" : [ {
+        "name" : "test_proxy_connect_timeout[55]",
+        "uid" : "633baeaaa0fccb7",
+        "parentUid" : "605c08e05a9adda910442e5d1346d1fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513467309,
+          "stop" : 1607513507867,
+          "duration" : 40558
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "55" ]
+      }, {
+        "name" : "test_proxy_connect_timeout[66]",
+        "uid" : "6ad29caec7c0b212",
+        "parentUid" : "605c08e05a9adda910442e5d1346d1fa",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513507882,
+          "stop" : 1607513547011,
+          "duration" : 39129
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "66" ]
+      } ],
+      "uid" : "605c08e05a9adda910442e5d1346d1fa"
+    }, {
+      "name" : "批量修改回源健康检查-验证批量修改生效并且其他的参数不受影响",
+      "children" : [ {
+        "name" : "test_health[100-99-123]",
+        "uid" : "c06c8a8253963abd",
+        "parentUid" : "8ea3fc7d415f2e165d5c4108f03dd65d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513547027,
+          "stop" : 1607513587747,
+          "duration" : 40720
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "99", "123", "100" ]
+      }, {
+        "name" : "test_health[23-23-23]",
+        "uid" : "79e763e173ac53e1",
+        "parentUid" : "8ea3fc7d415f2e165d5c4108f03dd65d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513587768,
+          "stop" : 1607513628531,
+          "duration" : 40763
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "23", "23", "23" ]
+      } ],
+      "uid" : "8ea3fc7d415f2e165d5c4108f03dd65d"
+    }, {
+      "name" : "批量修改回源保持长连接-验证批量修改生效并且其他的参数不受影响",
+      "children" : [ {
+        "name" : "test_proxy_keepalive[开启]",
+        "uid" : "e0d6d80ada36ec0",
+        "parentUid" : "1396b827e81e8a576bbab6f3f00a31ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513628552,
+          "stop" : 1607513667828,
+          "duration" : 39276
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'开启'" ]
+      }, {
+        "name" : "test_proxy_keepalive[关闭]",
+        "uid" : "7868c1caee3c4c15",
+        "parentUid" : "1396b827e81e8a576bbab6f3f00a31ba",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513667844,
+          "stop" : 1607513707419,
+          "duration" : 39575
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'关闭'" ]
+      } ],
+      "uid" : "1396b827e81e8a576bbab6f3f00a31ba"
+    }, {
+      "name" : "批量修改tls版本",
+      "children" : [ {
+        "name" : "test_https_default[0]",
+        "uid" : "b3f19b4d1b5af67c",
+        "parentUid" : "aa50dc9160f9146ba4509c4f937382be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513707433,
+          "stop" : 1607513749743,
+          "duration" : 42310
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "0" ]
+      }, {
+        "name" : "test_https_default[1]",
+        "uid" : "8e22a9000453305f",
+        "parentUid" : "aa50dc9160f9146ba4509c4f937382be",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513749759,
+          "stop" : 1607513790304,
+          "duration" : 40545
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "1" ]
+      } ],
+      "uid" : "aa50dc9160f9146ba4509c4f937382be"
+    }, {
+      "name" : "降低套餐版本",
+      "children" : [ {
+        "name" : "test_reduce_version",
+        "uid" : "88e526fa7720f51a",
+        "parentUid" : "d8107f91e72fd97b2e137cf9c5460b40",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513790321,
+          "stop" : 1607513856047,
+          "duration" : 65726
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "d8107f91e72fd97b2e137cf9c5460b40"
+    }, {
+      "name" : "升高套餐版本",
+      "children" : [ {
+        "name" : "test_upgrade_version",
+        "uid" : "741864fdc56d182",
+        "parentUid" : "6d8c5ec19dc17371a3af32e551866292",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607513856059,
+          "stop" : 1607513908736,
+          "duration" : 52677
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6d8c5ec19dc17371a3af32e551866292"
+    } ],
+    "uid" : "d38a2e6d036e4da37827652cdbee9b98"
+  } ]
+}

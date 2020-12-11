@@ -1,0 +1,3 @@
+config_time,server_name,ssl.status,ssl.http2https,ssl.min_version,ssl.http2_disable,ssl.hsts,proxy_connect_timeout,proxy_keepalive,health_check.max_fails,health_check.fails_timeout,health_check.keep_new_src_time,
+2020-12-09 17:39:55,www.lvluoyun.com,1,1,TLSv1.2,0,1,66,0,30,10,30,
+2020-12-09 17:52:51,www.lvluoyun.com,1,1,TLSv1.2,0,1,55,0,30,10,30,

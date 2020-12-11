@@ -1,0 +1,141 @@
+{
+  "uid" : "293b316d73a39a7",
+  "name" : "test_login",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_login",
+  "historyId" : "e0adb43daa843f9e275258e7f74a78c5",
+  "time" : {
+    "start" : 1607526128006,
+    "stop" : 1607526133868,
+    "duration" : 5862
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607526122688,
+      "stop" : 1607526128006,
+      "duration" : 5318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607526622998,
+      "stop" : 1607526622998,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "story",
+    "value" : "登录"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "tag",
+    "value" : "test"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "19808-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "872da115062133cb",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607525772358,
+        "stop" : 1607525777114,
+        "duration" : 4756
+      }
+    }, {
+      "uid" : "7a4191c657493ee4",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607516497912,
+        "stop" : 1607516502887,
+        "duration" : 4975
+      }
+    }, {
+      "uid" : "dedf148fdaddb36c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607515874086,
+        "stop" : 1607515878320,
+        "duration" : 4234
+      }
+    }, {
+      "uid" : "cea2aa8226d71ef",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607514570425,
+        "stop" : 1607514574239,
+        "duration" : 3814
+      }
+    }, {
+      "uid" : "776ff4639616821c",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607514163961,
+        "stop" : 1607514170603,
+        "duration" : 6642
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "test", "run(order=1)", "login" ]
+  },
+  "source" : "293b316d73a39a7.json",
+  "parameterValues" : [ ]
+}

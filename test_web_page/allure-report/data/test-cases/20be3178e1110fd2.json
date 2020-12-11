@@ -1,0 +1,111 @@
+{
+  "uid" : "20be3178e1110fd2",
+  "name" : "test_login",
+  "fullName" : "test_web_page.test_config.TestConfig#test_login",
+  "historyId" : "eb27f8692e3eac451ef03fabff1811da",
+  "time" : {
+    "start" : 1607513459670,
+    "stop" : 1607513467304,
+    "duration" : 7634
+  },
+  "description" : "登录",
+  "descriptionHtml" : "<p>登录</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607513454327,
+      "stop" : 1607513459670,
+      "duration" : 5343
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607513908740,
+      "stop" : 1607513908740,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试修改配置并校验配置是否生效"
+  }, {
+    "name" : "story",
+    "value" : "登录"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=1)"
+  }, {
+    "name" : "tag",
+    "value" : "test"
+  }, {
+    "name" : "tag",
+    "value" : "page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_web_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_config"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConfig"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "21672-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_web_page.test_config"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "6f5140d6ea228849",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607507553168,
+        "stop" : 1607507556818,
+        "duration" : 3650
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "test", "run(order=1)", "page" ]
+  },
+  "source" : "20be3178e1110fd2.json",
+  "parameterValues" : [ ]
+}

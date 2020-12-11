@@ -1,0 +1,508 @@
+{
+  "uid" : "c65ac5de72d1cacd",
+  "name" : "test_delete_model",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_delete_model",
+  "historyId" : "35faee71c0d1046969ec8a5b7e0a903a",
+  "time" : {
+    "start" : 1607514241794,
+    "stop" : 1607514262409,
+    "duration" : 20615
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: 删除失败\nassert False",
+  "statusTrace" : "self = <test_ddos.Test_Ddos object at 0x0000026797ABA220>\nbrowser = (<selenium.webdriver.chrome.webdriver.WebDriver (session=\"66a56ea3236da56a7463ca2e7c7e55c7\")>, {'ddos任务列表': <page.ddos...ww.lvluoyun.com', '0922.lvluoyun.com'], 'success_sign': 'ya-phone-fill', 'url': 'http://yundun.test.nodevops.cn', ...})\n\n    @pytest.mark.run(order=5)\n    @allure.story('批量删除所有的配置模板')\n    #@pytest.mark.skip\n    def test_delete_model(self, browser):\n        ddos_list = browser[1]['ddos任务列表']\n        ddos_cluster_page = browser[1]['ddos集群管理']\n        ddos_cluster_page.refresh()\n        ddos_list.click_menu('配置模板')\n        sleep(1)\n        flag = not ddos_cluster_page.verify_element_exist('xpath', '//span[text()=\"暂无数据\"]', time_wait=4)\n        while flag:\n            ddos_cluster_page.click_all()\n            ddos_cluster_page.click_delete()\n            with allure.step('验证删除成功'):\n                msg = ddos_cluster_page.get_success_message('操作成功')\n>               assert msg, '删除失败'\nE               AssertionError: 删除失败\nE               assert False\n\ntest_ddos.py:111: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: 删除失败\nassert False",
+    "statusTrace" : "self = <test_ddos.Test_Ddos object at 0x0000026797ABA220>\nbrowser = (<selenium.webdriver.chrome.webdriver.WebDriver (session=\"66a56ea3236da56a7463ca2e7c7e55c7\")>, {'ddos任务列表': <page.ddos...ww.lvluoyun.com', '0922.lvluoyun.com'], 'success_sign': 'ya-phone-fill', 'url': 'http://yundun.test.nodevops.cn', ...})\n\n    @pytest.mark.run(order=5)\n    @allure.story('批量删除所有的配置模板')\n    #@pytest.mark.skip\n    def test_delete_model(self, browser):\n        ddos_list = browser[1]['ddos任务列表']\n        ddos_cluster_page = browser[1]['ddos集群管理']\n        ddos_cluster_page.refresh()\n        ddos_list.click_menu('配置模板')\n        sleep(1)\n        flag = not ddos_cluster_page.verify_element_exist('xpath', '//span[text()=\"暂无数据\"]', time_wait=4)\n        while flag:\n            ddos_cluster_page.click_all()\n            ddos_cluster_page.click_delete()\n            with allure.step('验证删除成功'):\n                msg = ddos_cluster_page.get_success_message('操作成功')\n>               assert msg, '删除失败'\nE               AssertionError: 删除失败\nE               assert False\n\ntest_ddos.py:111: AssertionError",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607514241794,
+        "stop" : 1607514244526,
+        "duration" : 2732
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'配置模板'",
+      "time" : {
+        "start" : 1607514244526,
+        "stop" : 1607514244625,
+        "duration" : 99
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607514244526,
+          "stop" : 1607514244549,
+          "duration" : 23
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607514244549,
+          "stop" : 1607514244556,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"66a56ea3236da56a7463ca2e7c7e55c7\", element=\"47ba5124-389a-47ab-b527-deb0d19ea9ea\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"配置模板\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607514244556,
+          "stop" : 1607514244572,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"配置模板\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'配置模板'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//span[text()=\"暂无数据\"]'",
+      "time" : {
+        "start" : 1607514245635,
+        "stop" : 1607514251125,
+        "duration" : 5490
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//span[text()=\"暂无数据\"]'",
+        "time" : {
+          "start" : 1607514245635,
+          "stop" : 1607514251125,
+          "duration" : 5490
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "f2f783d033c5f698",
+          "name" : "批量获取元素失败",
+          "source" : "f2f783d033c5f698.png",
+          "type" : "image/png",
+          "size" : 76953
+        } ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"暂无数据\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "4"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//span[text()=\"暂无数据\"]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "4"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击全选",
+      "time" : {
+        "start" : 1607514251125,
+        "stop" : 1607514251192,
+        "duration" : 67
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//th//span[contains(@class,\"el-checkbox__input\")]'",
+        "time" : {
+          "start" : 1607514251125,
+          "stop" : 1607514251138,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//th//span[contains(@class,\"el-checkbox__input\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "10"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击删除",
+      "time" : {
+        "start" : 1607514251193,
+        "stop" : 1607514251718,
+        "duration" : 525
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "校验元素属性:类型-'xpath'，定位：'//span[text()=\"删除\"]/..'，预期内容'disabled'，属性：'disabled'",
+        "time" : {
+          "start" : 1607514251193,
+          "stop" : 1607514251587,
+          "duration" : 394
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"删除\"]/..'",
+          "time" : {
+            "start" : 1607514251193,
+            "stop" : 1607514251225,
+            "duration" : 32
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"删除\"]/..'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "cf095ea9f80698f0",
+          "name" : "预期文本与实际不同",
+          "source" : "cf095ea9f80698f0.png",
+          "type" : "image/png",
+          "size" : 704
+        } ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"删除\"]/..'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'disabled'"
+        }, {
+          "name" : "attr",
+          "value" : "'disabled'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"删除\"]/..'",
+        "time" : {
+          "start" : 1607514251588,
+          "stop" : 1607514251599,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"删除\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[contains(text(),\"确定\")]/..'",
+        "time" : {
+          "start" : 1607514251654,
+          "stop" : 1607514251672,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[contains(text(),\"确定\")]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "验证删除成功",
+      "time" : {
+        "start" : 1607514251718,
+        "stop" : 1607514262408,
+        "duration" : 10690
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: 删除失败\nassert False\n",
+      "statusTrace" : "  File \"D:\\workspace\\pytest1\\test_ddos_page\\test_ddos.py\", line 111, in test_delete_model\n    assert msg, '删除失败'\n",
+      "steps" : [ {
+        "name" : "获取成功提示信息",
+        "time" : {
+          "start" : 1607514251719,
+          "stop" : 1607514262408,
+          "duration" : 10689
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "校验元素内容是否包含指定的内容:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'，内容：'操作成功'",
+          "time" : {
+            "start" : 1607514251719,
+            "stop" : 1607514262407,
+            "duration" : 10688
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'",
+            "time" : {
+              "start" : 1607514251719,
+              "stop" : 1607514262306,
+              "duration" : 10587
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ {
+              "uid" : "7a469c1308fd8199",
+              "name" : "获取单个元素失败",
+              "source" : "7a469c1308fd8199.png",
+              "type" : "image/png",
+              "size" : 77633
+            } ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//div[contains(@class,\"success\")]//p'"
+            }, {
+              "name" : "time_wait",
+              "value" : "6"
+            } ],
+            "attachmentsCount" : 1,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"success\")]//p'"
+          }, {
+            "name" : "ele_text",
+            "value" : "'操作成功'"
+          }, {
+            "name" : "time_wait",
+            "value" : "6"
+          } ],
+          "attachmentsCount" : 1,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "'操作成功'"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1607514262431,
+        "stop" : 1607514262777,
+        "duration" : 346
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3e4daf8034f89c8",
+        "name" : "失败截图",
+        "source" : "3e4daf8034f89c8.png",
+        "type" : "image/png",
+        "size" : 77633
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 4,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 19,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "批量删除所有的配置模板"
+  }, {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=5)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "22492-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=5)" ]
+  },
+  "source" : "c65ac5de72d1cacd.json",
+  "parameterValues" : [ ]
+}

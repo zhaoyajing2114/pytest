@@ -1,0 +1,633 @@
+{
+  "uid" : "9d3539d68f207db2",
+  "name" : "test_delete_cluster",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_delete_cluster",
+  "historyId" : "4eadcf8c18f4457b4974a3c40666c924",
+  "time" : {
+    "start" : 1607526141558,
+    "stop" : 1607526154734,
+    "duration" : 13176
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607526122688,
+      "stop" : 1607526128006,
+      "duration" : 5318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607526141558,
+        "stop" : 1607526143974,
+        "duration" : 2416
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'集群管理'",
+      "time" : {
+        "start" : 1607526143974,
+        "stop" : 1607526144157,
+        "duration" : 183
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607526143974,
+          "stop" : 1607526143992,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607526143992,
+          "stop" : 1607526143995,
+          "duration" : 3
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"74df7305be2c343f9868d70963e14ec8\", element=\"e89d01fa-aae1-4693-981f-4371c1bb433f\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"集群管理\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607526143995,
+          "stop" : 1607526144006,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"集群管理\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'集群管理'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//span[text()=\"暂无数据\"]'",
+      "time" : {
+        "start" : 1607526147167,
+        "stop" : 1607526152600,
+        "duration" : 5433
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//span[text()=\"暂无数据\"]'",
+        "time" : {
+          "start" : 1607526147167,
+          "stop" : 1607526152600,
+          "duration" : 5433
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "cfa29c794e4df8c9",
+          "name" : "批量获取元素失败",
+          "source" : "cfa29c794e4df8c9.png",
+          "type" : "image/png",
+          "size" : 71787
+        } ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"暂无数据\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "4"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//span[text()=\"暂无数据\"]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "4"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击全选",
+      "time" : {
+        "start" : 1607526152600,
+        "stop" : 1607526152665,
+        "duration" : 65
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//th//span[contains(@class,\"el-checkbox__input\")]'",
+        "time" : {
+          "start" : 1607526152600,
+          "stop" : 1607526152617,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//th//span[contains(@class,\"el-checkbox__input\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "10"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击删除",
+      "time" : {
+        "start" : 1607526152665,
+        "stop" : 1607526153188,
+        "duration" : 523
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "校验元素属性:类型-'xpath'，定位：'//span[text()=\"删除\"]/..'，预期内容'disabled'，属性：'disabled'",
+        "time" : {
+          "start" : 1607526152665,
+          "stop" : 1607526153059,
+          "duration" : 394
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"删除\"]/..'",
+          "time" : {
+            "start" : 1607526152665,
+            "stop" : 1607526152685,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"删除\"]/..'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ {
+          "uid" : "dd5d9820cc206cb7",
+          "name" : "预期文本与实际不同",
+          "source" : "dd5d9820cc206cb7.png",
+          "type" : "image/png",
+          "size" : 704
+        } ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"删除\"]/..'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'disabled'"
+        }, {
+          "name" : "attr",
+          "value" : "'disabled'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"删除\"]/..'",
+        "time" : {
+          "start" : 1607526153059,
+          "stop" : 1607526153067,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"删除\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[contains(text(),\"确定\")]/..'",
+        "time" : {
+          "start" : 1607526153133,
+          "stop" : 1607526153145,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[contains(text(),\"确定\")]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "验证删除成功",
+      "time" : {
+        "start" : 1607526153188,
+        "stop" : 1607526154455,
+        "duration" : 1267
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "获取成功提示信息",
+        "time" : {
+          "start" : 1607526153188,
+          "stop" : 1607526154455,
+          "duration" : 1267
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "校验元素内容是否包含指定的内容:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'，内容：'成功'",
+          "time" : {
+            "start" : 1607526153188,
+            "stop" : 1607526154455,
+            "duration" : 1267
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'",
+            "time" : {
+              "start" : 1607526153188,
+              "stop" : 1607526154324,
+              "duration" : 1136
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//div[contains(@class,\"success\")]//p'"
+            }, {
+              "name" : "time_wait",
+              "value" : "6"
+            } ],
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false,
+            "stepsCount" : 0,
+            "hasContent" : true
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"success\")]//p'"
+          }, {
+            "name" : "ele_text",
+            "value" : "'成功'"
+          }, {
+            "name" : "time_wait",
+            "value" : "6"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 1,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "text",
+          "value" : "'成功'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 2,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//span[text()=\"暂无数据\"]'",
+      "time" : {
+        "start" : 1607526154455,
+        "stop" : 1607526154734,
+        "duration" : 279
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//span[text()=\"暂无数据\"]'",
+        "time" : {
+          "start" : 1607526154455,
+          "stop" : 1607526154734,
+          "duration" : 279
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"暂无数据\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "4"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//span[text()=\"暂无数据\"]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "4"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 2,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 20,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607526622998,
+      "stop" : 1607526622998,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "story",
+    "value" : "批量删除所有的集群"
+  }, {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=4)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "19808-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "87479e3fa40754da",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 删除失败\nassert False",
+      "time" : {
+        "start" : 1607525830364,
+        "stop" : 1607525852789,
+        "duration" : 22425
+      }
+    }, {
+      "uid" : "2c43875d8e327c9a",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 删除失败\nassert False",
+      "time" : {
+        "start" : 1607525807468,
+        "stop" : 1607525829996,
+        "duration" : 22528
+      }
+    }, {
+      "uid" : "77fb36f11e280a41",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 删除失败\nassert False",
+      "time" : {
+        "start" : 1607525784063,
+        "stop" : 1607525806988,
+        "duration" : 22925
+      }
+    }, {
+      "uid" : "daca62c2825772e5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607516509834,
+        "stop" : 1607516523425,
+        "duration" : 13591
+      }
+    }, {
+      "uid" : "e60aa964e53070c8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607515915803,
+        "stop" : 1607515929667,
+        "duration" : 13864
+      }
+    }, {
+      "uid" : "1600549602fc11f8",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607514591926,
+        "stop" : 1607514606149,
+        "duration" : 14223
+      }
+    }, {
+      "uid" : "dcccae660b717e1d",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 删除失败\nassert False",
+      "time" : {
+        "start" : 1607514220420,
+        "stop" : 1607514241440,
+        "duration" : 21020
+      }
+    }, {
+      "uid" : "3b7862d1f7e963",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 删除失败\nassert False",
+      "time" : {
+        "start" : 1607514199392,
+        "stop" : 1607514220057,
+        "duration" : 20665
+      }
+    }, {
+      "uid" : "4c00c4da694a4b01",
+      "status" : "failed",
+      "statusDetails" : "AssertionError: 删除失败\nassert False",
+      "time" : {
+        "start" : 1607514178102,
+        "stop" : 1607514198892,
+        "duration" : 20790
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=4)" ]
+  },
+  "source" : "9d3539d68f207db2.json",
+  "parameterValues" : [ ]
+}

@@ -1,0 +1,449 @@
+{
+  "uid" : "b0a87bf2692d3dcc",
+  "name" : "test_new_model[模板1-默认模板-]",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_new_model",
+  "historyId" : "3c2982b0d8129065804e3e1dc237fb67",
+  "time" : {
+    "start" : 1607526177934,
+    "stop" : 1607526182507,
+    "duration" : 4573
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607526122688,
+      "stop" : 1607526128006,
+      "duration" : 5318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607526177934,
+        "stop" : 1607526180457,
+        "duration" : 2523
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'配置模板'",
+      "time" : {
+        "start" : 1607526180458,
+        "stop" : 1607526180543,
+        "duration" : 85
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607526180458,
+          "stop" : 1607526180471,
+          "duration" : 13
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607526180471,
+          "stop" : 1607526180479,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"74df7305be2c343f9868d70963e14ec8\", element=\"f636d20c-0680-434f-8eda-ca4e687abeea\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"配置模板\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607526180480,
+          "stop" : 1607526180494,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"配置模板\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'配置模板'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "点击新增配置模板",
+      "time" : {
+        "start" : 1607526180543,
+        "stop" : 1607526180735,
+        "duration" : 192
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"新增配置模板\"]/..'",
+        "time" : {
+          "start" : 1607526180543,
+          "stop" : 1607526180651,
+          "duration" : 108
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"新增配置模板\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "填写创建模板表单：模板名称-'模板1'，描述-'默认模板'，复制模板-''",
+      "time" : {
+        "start" : 1607526180735,
+        "stop" : 1607526181010,
+        "duration" : 275
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"模板名称\"]'",
+        "time" : {
+          "start" : 1607526180735,
+          "stop" : 1607526180749,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@placeholder=\"模板名称\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "4"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"描述\"]'",
+        "time" : {
+          "start" : 1607526180890,
+          "stop" : 1607526180909,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@placeholder=\"描述\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "model_name",
+        "value" : "'模板1'"
+      }, {
+        "name" : "description",
+        "value" : "'默认模板'"
+      }, {
+        "name" : "copy_mpdel",
+        "value" : "''"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "点击创建配置模板的保存",
+      "time" : {
+        "start" : 1607526181010,
+        "stop" : 1607526181088,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"DmDialog\") and not(contains(@style,\"none\"))]/div[@aria-label=\"创建模板\"]//span[text()=\"保存\"]/..'",
+        "time" : {
+          "start" : 1607526181010,
+          "stop" : 1607526181026,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"DmDialog\") and not(contains(@style,\"none\"))]/div[@aria-label=\"创建模板\"]//span[text()=\"保存\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//td/div[contains(text(),\"模板1\")]'",
+      "time" : {
+        "start" : 1607526181088,
+        "stop" : 1607526182507,
+        "duration" : 1419
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//td/div[contains(text(),\"模板1\")]'",
+        "time" : {
+          "start" : 1607526181088,
+          "stop" : 1607526182507,
+          "duration" : 1419
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//td/div[contains(text(),\"模板1\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//td/div[contains(text(),\"模板1\")]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 14,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607526622998,
+      "stop" : 1607526622998,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "story",
+    "value" : "测试新增配置模板"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=7)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "19808-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "copy_model",
+    "value" : "''"
+  }, {
+    "name" : "descp",
+    "value" : "'默认模板'"
+  }, {
+    "name" : "model_name",
+    "value" : "'模板1'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "22bb16c3d53947de",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607516545530,
+        "stop" : 1607516549999,
+        "duration" : 4469
+      }
+    }, {
+      "uid" : "6887d0b1b563e4b9",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607515952109,
+        "stop" : 1607515956626,
+        "duration" : 4517
+      }
+    }, {
+      "uid" : "7b00fd285cbe29b7",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607514628827,
+        "stop" : 1607514633465,
+        "duration" : 4638
+      }
+    }, {
+      "uid" : "8032d3feb06601a6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607514312643,
+        "stop" : 1607514316040,
+        "duration" : 3397
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=7)" ]
+  },
+  "source" : "b0a87bf2692d3dcc.json",
+  "parameterValues" : [ "''", "'默认模板'", "'模板1'" ]
+}

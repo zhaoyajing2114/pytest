@@ -1,0 +1,745 @@
+{
+  "uid" : "971c17860613471e",
+  "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_new_defence_domain_success",
+  "historyId" : "95b4d549065f48ad4835ebc77fc08810",
+  "time" : {
+    "start" : 1607516579595,
+    "stop" : 1607516585102,
+    "duration" : 5507
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607516492538,
+      "stop" : 1607516497912,
+      "duration" : 5374
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607516579596,
+        "stop" : 1607516582015,
+        "duration" : 2419
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'业务列表'",
+      "time" : {
+        "start" : 1607516582016,
+        "stop" : 1607516582092,
+        "duration" : 76
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607516582016,
+          "stop" : 1607516582026,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607516582026,
+          "stop" : 1607516582034,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"4cc159a7e293460c8f896c5f30c1525e\", element=\"7e482522-4a71-456b-8571-07c510e27faa\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"业务列表\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607516582034,
+          "stop" : 1607516582048,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"业务列表\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'业务列表'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "点击新增防御域",
+      "time" : {
+        "start" : 1607516582092,
+        "stop" : 1607516582241,
+        "duration" : 149
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"新增防御域\"]/..'",
+        "time" : {
+          "start" : 1607516582092,
+          "stop" : 1607516582108,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"新增防御域\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "填写防御域信息--''：防御域名称：'IP段格式的防御域' ;防御域IP：'39.98.36.0/30';告警阈值:'1';告警类型:'1';集群:'绍兴BGP集群';模板:'模板1';联系人:'赵雅静';描述:''",
+      "time" : {
+        "start" : 1607516582241,
+        "stop" : 1607516583455,
+        "duration" : 1214
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"域名称\"]'",
+        "time" : {
+          "start" : 1607516582242,
+          "stop" : 1607516582252,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@placeholder=\"域名称\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//textarea[@placeholder=\"0.0.0.0\"]'",
+        "time" : {
+          "start" : 1607516582440,
+          "stop" : 1607516582452,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//textarea[@placeholder=\"0.0.0.0\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//input[@aria-label=\"描述文字\"]'",
+        "time" : {
+          "start" : 1607516582672,
+          "stop" : 1607516582682,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//input[@aria-label=\"描述文字\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'(//div[@aria-label=\"checkbox-group\"]/label)[1]'",
+        "time" : {
+          "start" : 1607516582798,
+          "stop" : 1607516582809,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'(//div[@aria-label=\"checkbox-group\"]/label)[1]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'(//div[@aria-label=\"checkbox-group\"]/label)[2]'",
+        "time" : {
+          "start" : 1607516582809,
+          "stop" : 1607516582815,
+          "duration" : 6
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'(//div[@aria-label=\"checkbox-group\"]/label)[2]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[contains(text(),\"清洗设备集群\")]/following-sibling::div[1]//i'",
+        "time" : {
+          "start" : 1607516582815,
+          "stop" : 1607516582831,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[contains(text(),\"清洗设备集群\")]/following-sibling::div[1]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"绍兴BGP集群\")]'",
+        "time" : {
+          "start" : 1607516582890,
+          "stop" : 1607516582901,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"绍兴BGP集群\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[contains(text(),\"引用配置模板\")]/following-sibling::div[1]//i'",
+        "time" : {
+          "start" : 1607516583029,
+          "stop" : 1607516583043,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[contains(text(),\"引用配置模板\")]/following-sibling::div[1]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"模板1\")]'",
+        "time" : {
+          "start" : 1607516583091,
+          "stop" : 1607516583117,
+          "duration" : 26
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"模板1\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//label[contains(text(),\"告警联系人\")]/following-sibling::div[1]//i'",
+        "time" : {
+          "start" : 1607516583236,
+          "stop" : 1607516583251,
+          "duration" : 15
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//label[contains(text(),\"告警联系人\")]/following-sibling::div[1]//i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"赵雅静\")]'",
+        "time" : {
+          "start" : 1607516583315,
+          "stop" : 1607516583331,
+          "duration" : 16
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"el-popper\") and not(contains(@style,\"none\"))]//li[contains(text(),\"赵雅静\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "defence_domain_name",
+        "value" : "'IP段格式的防御域'"
+      }, {
+        "name" : "ips",
+        "value" : "'39.98.36.0/30'"
+      }, {
+        "name" : "alarm",
+        "value" : "'1'"
+      }, {
+        "name" : "alarm_type",
+        "value" : "'1'"
+      }, {
+        "name" : "cluster_name",
+        "value" : "'绍兴BGP集群'"
+      }, {
+        "name" : "model_name",
+        "value" : "'模板1'"
+      }, {
+        "name" : "contect",
+        "value" : "'赵雅静'"
+      }, {
+        "name" : "description",
+        "value" : "''"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 11,
+      "hasContent" : true
+    }, {
+      "name" : "点击创建防御域的保存",
+      "time" : {
+        "start" : 1607516583455,
+        "stop" : 1607516583524,
+        "duration" : 69
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"DmDialog\") and not(contains(@style,\"none\"))]/div[@aria-label=\"创建防御域\"]//span[text()=\"保存\"]/..'",
+        "time" : {
+          "start" : 1607516583455,
+          "stop" : 1607516583469,
+          "duration" : 14
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"DmDialog\") and not(contains(@style,\"none\"))]/div[@aria-label=\"创建防御域\"]//span[text()=\"保存\"]/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "获取成功提示信息",
+      "time" : {
+        "start" : 1607516583524,
+        "stop" : 1607516584605,
+        "duration" : 1081
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "校验元素内容是否包含指定的内容:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'，内容：'操作成功'",
+        "time" : {
+          "start" : 1607516583528,
+          "stop" : 1607516584605,
+          "duration" : 1077
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"success\")]//p'",
+          "time" : {
+            "start" : 1607516583528,
+            "stop" : 1607516584480,
+            "duration" : 952
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"success\")]//p'"
+          }, {
+            "name" : "time_wait",
+            "value" : "6"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"success\")]//p'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'操作成功'"
+        }, {
+          "name" : "time_wait",
+          "value" : "6"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "text",
+        "value" : "'操作成功'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    }, {
+      "name" : "验证防御域确实新增成功",
+      "time" : {
+        "start" : 1607516584605,
+        "stop" : 1607516585102,
+        "duration" : 497
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//div[contains(text(),\"IP段格式的防御域\")]'",
+        "time" : {
+          "start" : 1607516584605,
+          "stop" : 1607516585102,
+          "duration" : 497
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找多个元素:类型-'xpath'，定位：'//div[contains(text(),\"IP段格式的防御域\")]'",
+          "time" : {
+            "start" : 1607516584605,
+            "stop" : 1607516585102,
+            "duration" : 497
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(text(),\"IP段格式的防御域\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false,
+          "stepsCount" : 0,
+          "hasContent" : true
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(text(),\"IP段格式的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 1,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 2,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 27,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607516875935,
+      "stop" : 1607516875935,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "story",
+    "value" : "验证各种格式的IP都能新增防御域成功"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=9)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "15284-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "alarm",
+    "value" : "'1'"
+  }, {
+    "name" : "alarm_type",
+    "value" : "'1'"
+  }, {
+    "name" : "cluster_name",
+    "value" : "'绍兴BGP集群'"
+  }, {
+    "name" : "contect",
+    "value" : "'赵雅静'"
+  }, {
+    "name" : "defence_domain_name",
+    "value" : "'IP段格式的防御域'"
+  }, {
+    "name" : "description",
+    "value" : "''"
+  }, {
+    "name" : "ips",
+    "value" : "'39.98.36.0/30'"
+  }, {
+    "name" : "model_name",
+    "value" : "'模板1'"
+  } ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=9)" ]
+  },
+  "source" : "971c17860613471e.json",
+  "parameterValues" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+}

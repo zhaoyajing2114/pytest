@@ -1,0 +1,4 @@
+HTTP 跳转 HTTPS:全量跳转
+HTTP2：on
+HSTS:on
+支持的TLS版本:TLS1.2

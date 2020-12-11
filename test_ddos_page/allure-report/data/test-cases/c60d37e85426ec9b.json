@@ -1,0 +1,1150 @@
+{
+  "uid" : "c60d37e85426ec9b",
+  "name" : "test_domain_model[45.250.34.12]",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_domain_model",
+  "historyId" : "a9bd1b9a788e0055d6fcd7c8599fd240",
+  "time" : {
+    "start" : 1607526441880,
+    "stop" : 1607526450597,
+    "duration" : 8717
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607526122688,
+      "stop" : 1607526128006,
+      "duration" : 5318
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607526441880,
+        "stop" : 1607526444421,
+        "duration" : 2541
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'业务列表'",
+      "time" : {
+        "start" : 1607526444421,
+        "stop" : 1607526444499,
+        "duration" : 78
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607526444422,
+          "stop" : 1607526444431,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607526444431,
+          "stop" : 1607526444440,
+          "duration" : 9
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"74df7305be2c343f9868d70963e14ec8\", element=\"f92e0d78-561c-4dc7-a0ec-9397b707f062\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"业务列表\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607526444440,
+          "stop" : 1607526444447,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"业务列表\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'业务列表'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr'",
+      "time" : {
+        "start" : 1607526444499,
+        "stop" : 1607526445442,
+        "duration" : 943
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[1]/td[4]/div/span'",
+      "time" : {
+        "start" : 1607526445442,
+        "stop" : 1607526445458,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[1]/td[4]/div/span'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[1]/td[3]'",
+      "time" : {
+        "start" : 1607526445477,
+        "stop" : 1607526445492,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[1]/td[3]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span'",
+      "time" : {
+        "start" : 1607526445510,
+        "stop" : 1607526445519,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[4]/div/span'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[2]/td[3]'",
+      "time" : {
+        "start" : 1607526445531,
+        "stop" : 1607526445546,
+        "duration" : 15
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[3]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[3]/td[4]/div/span'",
+      "time" : {
+        "start" : 1607526445568,
+        "stop" : 1607526445578,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[3]/td[4]/div/span'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[3]/td[3]'",
+      "time" : {
+        "start" : 1607526445600,
+        "stop" : 1607526445617,
+        "duration" : 17
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[3]/td[3]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[4]/td[4]/div/span'",
+      "time" : {
+        "start" : 1607526445633,
+        "stop" : 1607526445640,
+        "duration" : 7
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[4]/td[4]/div/span'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[4]/td[3]'",
+      "time" : {
+        "start" : 1607526445657,
+        "stop" : 1607526445691,
+        "duration" : 34
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[4]/td[3]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[5]/td[4]/div/span'",
+      "time" : {
+        "start" : 1607526445711,
+        "stop" : 1607526445724,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[5]/td[4]/div/span'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[5]/td[3]'",
+      "time" : {
+        "start" : 1607526445736,
+        "stop" : 1607526445740,
+        "duration" : 4
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[5]/td[3]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[6]/td[4]/div/span'",
+      "time" : {
+        "start" : 1607526445760,
+        "stop" : 1607526445773,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[6]/td[4]/div/span'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[6]/td[3]'",
+      "time" : {
+        "start" : 1607526445789,
+        "stop" : 1607526445803,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[6]/td[3]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[7]/td[4]/div/span'",
+      "time" : {
+        "start" : 1607526445812,
+        "stop" : 1607526445821,
+        "duration" : 9
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[7]/td[4]/div/span'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[7]/td[3]'",
+      "time" : {
+        "start" : 1607526445832,
+        "stop" : 1607526445845,
+        "duration" : 13
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[7]/td[3]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607526445863,
+        "stop" : 1607526448291,
+        "duration" : 2428
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'配置模板'",
+      "time" : {
+        "start" : 1607526448292,
+        "stop" : 1607526448430,
+        "duration" : 138
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607526448292,
+          "stop" : 1607526448311,
+          "duration" : 19
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607526448311,
+          "stop" : 1607526448319,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"74df7305be2c343f9868d70963e14ec8\", element=\"08392e8d-59da-40d1-a4e5-a0cea7ab2d2d\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"配置模板\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607526448320,
+          "stop" : 1607526448342,
+          "duration" : 22
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"配置模板\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'配置模板'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 3,
+      "hasContent" : true
+    }, {
+      "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr'",
+      "time" : {
+        "start" : 1607526450440,
+        "stop" : 1607526450454,
+        "duration" : 14
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[1]/td[2]/div'",
+      "time" : {
+        "start" : 1607526450454,
+        "stop" : 1607526450462,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[1]/td[2]/div'"
+      }, {
+        "name" : "time_wait",
+        "value" : "5"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "校验元素内容:类型-'xpath'，定位：'//tbody/tr[1]/td[4]/div'，内容：'-'",
+      "time" : {
+        "start" : 1607526450470,
+        "stop" : 1607526450506,
+        "duration" : 36
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[1]/td[4]/div'",
+        "time" : {
+          "start" : 1607526450470,
+          "stop" : 1607526450487,
+          "duration" : 17
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tbody/tr[1]/td[4]/div'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[1]/td[4]/div'"
+      }, {
+        "name" : "ele_text",
+        "value" : "'-'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "查找元素:类型-'xpath'，定位：'//tbody/tr[2]/td[2]/div'",
+      "time" : {
+        "start" : 1607526450506,
+        "stop" : 1607526450522,
+        "duration" : 16
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[2]/div'"
+      }, {
+        "name" : "time_wait",
+        "value" : "5"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-多个单IP的防御域\")]'",
+      "time" : {
+        "start" : 1607526450533,
+        "stop" : 1607526450541,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-多个单IP的防御域\")]'",
+        "time" : {
+          "start" : 1607526450533,
+          "stop" : 1607526450541,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-多个单IP的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-多个单IP的防御域\")]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-CIDR格式的防御域\")]'",
+      "time" : {
+        "start" : 1607526450541,
+        "stop" : 1607526450551,
+        "duration" : 10
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-CIDR格式的防御域\")]'",
+        "time" : {
+          "start" : 1607526450541,
+          "stop" : 1607526450551,
+          "duration" : 10
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-CIDR格式的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-CIDR格式的防御域\")]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-IP段格式的防御域\")]'",
+      "time" : {
+        "start" : 1607526450551,
+        "stop" : 1607526450559,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-IP段格式的防御域\")]'",
+        "time" : {
+          "start" : 1607526450551,
+          "stop" : 1607526450559,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-IP段格式的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"重复-IP段格式的防御域\")]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"多个单IP的防御域\")]'",
+      "time" : {
+        "start" : 1607526450559,
+        "stop" : 1607526450567,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"多个单IP的防御域\")]'",
+        "time" : {
+          "start" : 1607526450559,
+          "stop" : 1607526450567,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"多个单IP的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"多个单IP的防御域\")]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"单IP的防御域\")]'",
+      "time" : {
+        "start" : 1607526450567,
+        "stop" : 1607526450575,
+        "duration" : 8
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"单IP的防御域\")]'",
+        "time" : {
+          "start" : 1607526450567,
+          "stop" : 1607526450575,
+          "duration" : 8
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"单IP的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"单IP的防御域\")]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"CIDR格式的防御域\")]'",
+      "time" : {
+        "start" : 1607526450575,
+        "stop" : 1607526450586,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"CIDR格式的防御域\")]'",
+        "time" : {
+          "start" : 1607526450575,
+          "stop" : 1607526450586,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"CIDR格式的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"CIDR格式的防御域\")]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"IP段格式的防御域\")]'",
+      "time" : {
+        "start" : 1607526450586,
+        "stop" : 1607526450597,
+        "duration" : 11
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"IP段格式的防御域\")]'",
+        "time" : {
+          "start" : 1607526450586,
+          "stop" : 1607526450597,
+          "duration" : 11
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"IP段格式的防御域\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//tbody/tr[2]/td[4]/div/span/span[contains(text(),\"IP段格式的防御域\")]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "2"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 44,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607526622998,
+      "stop" : 1607526622998,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "story",
+    "value" : "测试防御域引用模板之后会展示在配置模板中"
+  }, {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=16)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "19808-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "device",
+    "value" : "'45.250.34.12'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "429a05a79fdcbac6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607516845700,
+        "stop" : 1607516854395,
+        "duration" : 8695
+      }
+    }, {
+      "uid" : "19dd2ebf3831d6c5",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607515149684,
+        "stop" : 1607515158646,
+        "duration" : 8962
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "run(order=16)" ]
+  },
+  "source" : "c60d37e85426ec9b.json",
+  "parameterValues" : [ "'45.250.34.12'" ]
+}

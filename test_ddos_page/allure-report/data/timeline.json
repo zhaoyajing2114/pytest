@@ -1,0 +1,2620 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "LAPTOP-HRAELMRK",
+    "children" : [ {
+      "name" : "15284-MainThread",
+      "children" : [ {
+        "name" : "test_add_device_disabled[-1-60-60-1-1-赵雅静-设备IP不能为空]",
+        "uid" : "a53a9c02f0db977e",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516801459,
+          "stop" : 1607516807618,
+          "duration" : 6159
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备IP不能为空'", "''", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-------只填写名称]",
+        "uid" : "61d85a0634ea489f",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516558742,
+          "stop" : 1607516562310,
+          "duration" : 3568
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "'测试新增防御域1'", "'只填写名称'", "''", "''" ]
+      }, {
+        "name" : "test_add_device[45.250.34.134-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "87025be628d1bb0f",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516734061,
+          "stop" : 1607516740414,
+          "duration" : 6353
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.134'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-39.98.36.1-11-999-1----只不填写集群]",
+        "uid" : "9eee4acf2cc14899",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516562338,
+          "stop" : 1607516566386,
+          "duration" : 4048
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "''", "''", "'测试新增防御域1'", "'只不填写集群'", "'39.98.36.1-11'", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "99a0dd18a65823f1",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516725254,
+          "stop" : 1607516733643,
+          "duration" : 8389
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-单IP的防御域]",
+        "uid" : "c9ee7a4a17c4813b",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607516679080,
+          "stop" : 1607516683582,
+          "duration" : 4502
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-单IP的防御域'", "'单个重复'", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.10-1-99-99-1-2-赵雅静-描述]",
+        "uid" : "647a1d7e5116dfa0",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516775156,
+          "stop" : 1607516782166,
+          "duration" : 7010
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "2", "'99'", "'描述'", "'45.250.34.10'", "'99'", "1", "1" ]
+      }, {
+        "name" : "test_new_cluster[绍兴BGP集群-集群描述:新建启用的集群-1]",
+        "uid" : "604a96d2f34b22a2",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516536897,
+          "stop" : 1607516540839,
+          "duration" : 3942
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'绍兴BGP集群'", "'集群描述:新建启用的集群'", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_success[多个单IP的防御域-39.98.36.100\n39.98.36.101\n39.98.36.102\n-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "85febeb277d8a352",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516611664,
+          "stop" : 1607516617461,
+          "duration" : 5797
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'多个单IP的防御域'", "''", "'39.98.36.100\n39.98.36.101\n39.98.36.102\n'", "'模板1'" ]
+      }, {
+        "name" : "test_modify_conf[模板1]",
+        "uid" : "1222b098db5a0f49",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607516875951,
+          "stop" : 1607516895085,
+          "duration" : 19134
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "26cb0d69e157ad7d",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516632626,
+          "stop" : 1607516640176,
+          "duration" : 7550
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_modify_conf[模板1]",
+        "uid" : "5e9b991f9bd5718d",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607516854412,
+          "stop" : 1607516875547,
+          "duration" : 21135
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "d8dae53dcd410810",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516640560,
+          "stop" : 1607516647926,
+          "duration" : 7366
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_new_cluster[测试集群-描述：新建不启用的集群-0]",
+        "uid" : "27229bc90155bd65",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516540852,
+          "stop" : 1607516545510,
+          "duration" : 4658
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'测试集群'", "'描述：新建不启用的集群'", "0" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.9-1-60-60-1-1--告警接收人不能为空]",
+        "uid" : "53523867baa82f7e",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516782192,
+          "stop" : 1607516788242,
+          "duration" : 6050
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "1", "'60'", "'告警接收人不能为空'", "'45.250.34.9'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_enable_device",
+        "uid" : "dded4c0b3b9a0304",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516822815,
+          "stop" : 1607516831206,
+          "duration" : 8391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_success[CIDR格式的防御域-39.98.36.201-224-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "eaaef5ec40b66ae9",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516585125,
+          "stop" : 1607516590729,
+          "duration" : 5604
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'CIDR格式的防御域'", "''", "'39.98.36.201-224'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "66154aaf6cd2a8cd",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516663570,
+          "stop" : 1607516670992,
+          "duration" : 7422
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_device[45.250.34.12]",
+        "uid" : "9f6298b34f6a91c8",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516831222,
+          "stop" : 1607516845692,
+          "duration" : 14470
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'45.250.34.12'" ]
+      }, {
+        "name" : "test_add_device[45.250.34.132-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "3fb2ad7e4076e7d3",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516747403,
+          "stop" : 1607516754131,
+          "duration" : 6728
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.132'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_modify_conf[模板1]",
+        "uid" : "e8e3adf8cf1350a1",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516895568,
+          "stop" : 1607516914761,
+          "duration" : 19193
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "70a2dc5cdffe050a",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607516574355,
+          "stop" : 1607516579025,
+          "duration" : 4670
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "7e665ce3fee2b4ed",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516617480,
+          "stop" : 1607516632229,
+          "duration" : 14749
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-单IP的防御域]",
+        "uid" : "b7f71f9d7a72d67b",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607516684037,
+          "stop" : 1607516688653,
+          "duration" : 4616
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-单IP的防御域'", "'单个重复'", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device_disabled[-1-60-60-1-1-赵雅静-设备IP不能为空]",
+        "uid" : "a785ac809ded8391",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607516794364,
+          "stop" : 1607516801017,
+          "duration" : 6653
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备IP不能为空'", "''", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[-------]",
+        "uid" : "35527fa9a7043c5d",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516555213,
+          "stop" : 1607516558716,
+          "duration" : 3503
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "''", "''", "''", "''" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.132-1-60-60-1-1-赵雅静-设备已存在]",
+        "uid" : "3d399ff26ede6101",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516807636,
+          "stop" : 1607516814158,
+          "duration" : 6522
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备已存在'", "'45.250.34.132'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.12-0-60-60-1-1-赵雅静-描述]",
+        "uid" : "f7bff5ab8d039a12",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516761218,
+          "stop" : 1607516767748,
+          "duration" : 6530
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.12'", "'60'", "1", "0" ]
+      }, {
+        "name" : "test_new_defence_domain_success[单IP的防御域-39.98.36.106-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "e3a7f48ae5585a6e",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516590755,
+          "stop" : 1607516605562,
+          "duration" : 14807
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'单IP的防御域'", "''", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.11-1-60-60-0-1-赵雅静-描述]",
+        "uid" : "804b87ced833f191",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516767774,
+          "stop" : 1607516775128,
+          "duration" : 7354
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.11'", "'60'", "0", "1" ]
+      }, {
+        "name" : "test_add_device[45.250.34.131-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "f137d751570fd05",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516754162,
+          "stop" : 1607516761188,
+          "duration" : 7026
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.131'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_domain_model[45.250.34.12]",
+        "uid" : "429a05a79fdcbac6",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516845700,
+          "stop" : 1607516854395,
+          "duration" : 8695
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'45.250.34.12'" ]
+      }, {
+        "name" : "test_add_device_disabled[123-1-60-60-1-1-赵雅静-设备IP格式错误]",
+        "uid" : "ca312b925bb4cde0",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516788270,
+          "stop" : 1607516794333,
+          "duration" : 6063
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备IP格式错误'", "'123'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "7c8189f915406b39",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516717301,
+          "stop" : 1607516724853,
+          "duration" : 7552
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_defence_group",
+        "uid" : "e8200ea0292fd99c",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516506329,
+          "stop" : 1607516509822,
+          "duration" : 3493
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_model[模板2-默认模板-]",
+        "uid" : "64e70e6592799656",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516550018,
+          "stop" : 1607516555198,
+          "duration" : 5180
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板2'" ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "971c17860613471e",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516579595,
+          "stop" : 1607516585102,
+          "duration" : 5507
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "5a119123d798764a",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516671395,
+          "stop" : 1607516678691,
+          "duration" : 7296
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "2cc640e4ae7724d8",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516648332,
+          "stop" : 1607516663180,
+          "duration" : 14848
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_login",
+        "uid" : "7a4191c657493ee4",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516497912,
+          "stop" : 1607516502887,
+          "duration" : 4975
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "daca62c2825772e5",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516509834,
+          "stop" : 1607516523425,
+          "duration" : 13591
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "ae5c51c68790c7e9",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516570274,
+          "stop" : 1607516574327,
+          "duration" : 4053
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1--999-1-绍兴BGP---不填写IP]",
+        "uid" : "c8645bdc80c430c2",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516566411,
+          "stop" : 1607516570243,
+          "duration" : 3832
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'不填写IP'", "''", "''" ]
+      }, {
+        "name" : "test_delete_model",
+        "uid" : "250ac497a327677a",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516523432,
+          "stop" : 1607516536890,
+          "duration" : 13458
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_model[模板1-默认模板-]",
+        "uid" : "22bb16c3d53947de",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516545530,
+          "stop" : 1607516549999,
+          "duration" : 4469
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-单IP的防御域]",
+        "uid" : "a730f41bcac74223",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516689120,
+          "stop" : 1607516701753,
+          "duration" : 12633
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-单IP的防御域'", "'单个重复'", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device[45.250.34.133-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "66ff53bd1b4d514d",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516740441,
+          "stop" : 1607516747373,
+          "duration" : 6932
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.133'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_success[单IP的防御域-39.98.36.106-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "6e7282b26addde9c",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516605923,
+          "stop" : 1607516611653,
+          "duration" : 5730
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'单IP的防御域'", "''", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "e4bb5eb683277d3f",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516701773,
+          "stop" : 1607516716929,
+          "duration" : 15156
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_bag_grabbing_list",
+        "uid" : "2d12716760970a5b",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516502891,
+          "stop" : 1607516506321,
+          "duration" : 3430
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_disable_device",
+        "uid" : "5316e062b4bf11ab",
+        "parentUid" : "6276330a3a5177f5ae96753e48d5450d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607516814179,
+          "stop" : 1607516822798,
+          "duration" : 8619
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6276330a3a5177f5ae96753e48d5450d"
+    }, {
+      "name" : "22492-MainThread",
+      "children" : [ {
+        "name" : "test_delete_model",
+        "uid" : "b48a5e6ecbf56a18",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514283635,
+          "stop" : 1607514304209,
+          "duration" : 20574
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "182703d6910d6d80",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514433720,
+          "stop" : 1607514448570,
+          "duration" : 14850
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_new_cluster[绍兴BGP集群-集群描述:新建启用的集群-1]",
+        "uid" : "b3f2a2040d956289",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514304579,
+          "stop" : 1607514307851,
+          "duration" : 3272
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'绍兴BGP集群'", "'集群描述:新建启用的集群'", "1" ]
+      }, {
+        "name" : "test_delete_defence_group",
+        "uid" : "47f395330a9b6d4",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514174535,
+          "stop" : 1607514178097,
+          "duration" : 3562
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1--999-1-绍兴BGP---不填写IP]",
+        "uid" : "73dfad5df466d6c2",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514364055,
+          "stop" : 1607514378409,
+          "duration" : 14354
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'不填写IP'", "''", "''" ]
+      }, {
+        "name" : "test_delete_model",
+        "uid" : "a5caa716f6682ce9",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514262781,
+          "stop" : 1607514283265,
+          "duration" : 20484
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-------只填写名称]",
+        "uid" : "4353c8a6639b0b47",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514335102,
+          "stop" : 1607514349317,
+          "duration" : 14215
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "'测试新增防御域1'", "'只填写名称'", "''", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[-------]",
+        "uid" : "cb763de9e4a747df",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514321251,
+          "stop" : 1607514335086,
+          "duration" : 13835
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "''", "''", "''", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_success[CIDR格式的防御域-39.98.36.201-224-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "a658355eb2e2262c",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607514510971,
+          "stop" : 1607514520902,
+          "duration" : 9931
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'CIDR格式的防御域'", "''", "'39.98.36.201-224'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "dcccae660b717e1d",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514220420,
+          "stop" : 1607514241440,
+          "duration" : 21020
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "f47e5ccc2145ae1a",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514474981,
+          "stop" : 1607514500894,
+          "duration" : 25913
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_new_cluster[测试集群-描述：新建不启用的集群-0]",
+        "uid" : "98c96f18835c634",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514307863,
+          "stop" : 1607514312631,
+          "duration" : 4768
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'测试集群'", "'描述：新建不启用的集群'", "0" ]
+      }, {
+        "name" : "test_delete_model",
+        "uid" : "c65ac5de72d1cacd",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514241794,
+          "stop" : 1607514262409,
+          "duration" : 20615
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "4c00c4da694a4b01",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514178102,
+          "stop" : 1607514198892,
+          "duration" : 20790
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "8c181210e5f0cbdb",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514448593,
+          "stop" : 1607514474493,
+          "duration" : 25900
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-39.98.36.1-11-999-1----只不填写集群]",
+        "uid" : "11b8cd91ac521282",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514349340,
+          "stop" : 1607514364026,
+          "duration" : 14686
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "''", "''", "'测试新增防御域1'", "'只不填写集群'", "'39.98.36.1-11'", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "4159ea23e5e8c7ee",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514408000,
+          "stop" : 1607514433330,
+          "duration" : 25330
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_new_model[模板1-默认模板-]",
+        "uid" : "8032d3feb06601a6",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514312643,
+          "stop" : 1607514316040,
+          "duration" : 3397
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "3b7862d1f7e963",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514199392,
+          "stop" : 1607514220057,
+          "duration" : 20665
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_bag_grabbing_list",
+        "uid" : "36f3c2552e331685",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514170609,
+          "stop" : 1607514174528,
+          "duration" : 3919
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "a2968042f7f95f9c",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607514501249,
+          "stop" : 1607514510442,
+          "duration" : 9193
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_login",
+        "uid" : "776ff4639616821c",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514163961,
+          "stop" : 1607514170603,
+          "duration" : 6642
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "804252dc154bae1",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514378432,
+          "stop" : 1607514407617,
+          "duration" : 29185
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_new_model[模板2-默认模板-]",
+        "uid" : "7c415add0b512907",
+        "parentUid" : "c6266c0f86a2f4eff1d431e0ca54da3e",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514316061,
+          "stop" : 1607514321237,
+          "duration" : 5176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板2'" ]
+      } ],
+      "uid" : "c6266c0f86a2f4eff1d431e0ca54da3e"
+    }, {
+      "name" : "18160-MainThread",
+      "children" : [ {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "4c1cbac34f5f5d8e",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607515038705,
+          "stop" : 1607515043865,
+          "duration" : 5160
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "9490cc395986ed02",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514897661,
+          "stop" : 1607514923446,
+          "duration" : 25785
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-39.98.36.1-11-999-1----只不填写集群]",
+        "uid" : "ad4e7438524c4740",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514666297,
+          "stop" : 1607514680444,
+          "duration" : 14147
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "''", "''", "'测试新增防御域1'", "'只不填写集群'", "'39.98.36.1-11'", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_success[单IP的防御域-39.98.36.106-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "42cdd3893acd63df",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514794378,
+          "stop" : 1607514819954,
+          "duration" : 25576
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'单IP的防御域'", "''", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.11-1-60-60-0-1-赵雅静-描述]",
+        "uid" : "f14c89cf0a2539d4",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515078425,
+          "stop" : 1607515085260,
+          "duration" : 6835
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.11'", "'60'", "0", "1" ]
+      }, {
+        "name" : "test_add_device[45.250.34.132-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "e034e0770761c102",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515057324,
+          "stop" : 1607515064176,
+          "duration" : 6852
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.132'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_modify_conf[模板1]",
+        "uid" : "da680742fb8fe8cb",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607515179046,
+          "stop" : 1607515191977,
+          "duration" : 12931
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "fd0f5cdf3f658bc0",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514720888,
+          "stop" : 1607514746283,
+          "duration" : 25395
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_delete_model",
+        "uid" : "86edb81beeb38551",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514606157,
+          "stop" : 1607514619988,
+          "duration" : 13831
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "842af8521ab32b9",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514864460,
+          "stop" : 1607514880677,
+          "duration" : 16217
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_success[多个单IP的防御域-39.98.36.100\n39.98.36.101\n39.98.36.102\n-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "a6851259beeba135",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514826286,
+          "stop" : 1607514832462,
+          "duration" : 6176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'多个单IP的防御域'", "''", "'39.98.36.100\n39.98.36.101\n39.98.36.102\n'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "ee6c8a45442d8b3e",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514881061,
+          "stop" : 1607514897295,
+          "duration" : 16234
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[-------]",
+        "uid" : "46df64eea78a7bd0",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514638089,
+          "stop" : 1607514652107,
+          "duration" : 14018
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "''", "''", "''", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-单IP的防御域]",
+        "uid" : "a16d18c976e2c9c3",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514976251,
+          "stop" : 1607515002053,
+          "duration" : 25802
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-单IP的防御域'", "'单个重复'", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_new_model[模板1-默认模板-]",
+        "uid" : "7b00fd285cbe29b7",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514628827,
+          "stop" : 1607514633465,
+          "duration" : 4638
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "13cc7c7d5fd9891d",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607515021823,
+          "stop" : 1607515038354,
+          "duration" : 16531
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "eb8801731123a886",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514923837,
+          "stop" : 1607514949788,
+          "duration" : 25951
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "71d2361e169e3cb4",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607515011721,
+          "stop" : 1607515021338,
+          "duration" : 9617
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1--999-1-绍兴BGP---不填写IP]",
+        "uid" : "4cff788290d900b6",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514680462,
+          "stop" : 1607514694804,
+          "duration" : 14342
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'不填写IP'", "''", "''" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.132-1-60-60-1-1-赵雅静-设备已存在]",
+        "uid" : "11d8f96f923022cc",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515111011,
+          "stop" : 1607515117324,
+          "duration" : 6313
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备已存在'", "'45.250.34.132'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "72450b73cc78c770",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607514772272,
+          "stop" : 1607514776929,
+          "duration" : 4657
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_enable_device",
+        "uid" : "9a850829e2bbe077",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515126499,
+          "stop" : 1607515135746,
+          "duration" : 9247
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_success[单IP的防御域-39.98.36.106-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "2ed033fb36bad04d",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607514788861,
+          "stop" : 1607514793949,
+          "duration" : 5088
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'单IP的防御域'", "''", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.9-1-60-60-1-1--告警接收人不能为空]",
+        "uid" : "7dc4779b30101386",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515092137,
+          "stop" : 1607515098183,
+          "duration" : 6046
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "1", "'60'", "'告警接收人不能为空'", "'45.250.34.9'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_add_device_disabled[123-1-60-60-1-1-赵雅静-设备IP格式错误]",
+        "uid" : "80d3ea6da40c72f2",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515098198,
+          "stop" : 1607515104486,
+          "duration" : 6288
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备IP格式错误'", "'123'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_model[模板2-默认模板-]",
+        "uid" : "8f92dee482f03f0",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514633474,
+          "stop" : 1607514638075,
+          "duration" : 4601
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板2'" ]
+      }, {
+        "name" : "test_new_defence_domain_success[单IP的防御域-39.98.36.106-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "3d7bb380a6a296e8",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514820319,
+          "stop" : 1607514826264,
+          "duration" : 5945
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'单IP的防御域'", "''", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_modify_conf[模板1]",
+        "uid" : "9f731847fc834f79",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607515192395,
+          "stop" : 1607515205297,
+          "duration" : 12902
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "9c9b398f7804b779",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514777356,
+          "stop" : 1607514782872,
+          "duration" : 5516
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device[45.250.34.131-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "380cb652fb62eac1",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515064189,
+          "stop" : 1607515071430,
+          "duration" : 7241
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.131'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "1600549602fc11f8",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514591926,
+          "stop" : 1607514606149,
+          "duration" : 14223
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_modify_conf[模板1]",
+        "uid" : "c45628d47c9219e4",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607515158659,
+          "stop" : 1607515178578,
+          "duration" : 19919
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'模板1'" ]
+      }, {
+        "name" : "test_new_cluster[绍兴BGP集群-集群描述:新建启用的集群-1]",
+        "uid" : "38c1901eb0766b5d",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514619996,
+          "stop" : 1607514624330,
+          "duration" : 4334
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'绍兴BGP集群'", "'集群描述:新建启用的集群'", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "386ac6626d468c54",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514694823,
+          "stop" : 1607514720370,
+          "duration" : 25547
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_disable_device",
+        "uid" : "35e74dc728126e98",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515117343,
+          "stop" : 1607515126492,
+          "duration" : 9149
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-单IP的防御域]",
+        "uid" : "2cd5a8e7fb32e4c9",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514950172,
+          "stop" : 1607514975899,
+          "duration" : 25727
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-单IP的防御域'", "'单个重复'", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device_disabled[-1-60-60-1-1-赵雅静-设备IP不能为空]",
+        "uid" : "9a7f21d070659d27",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515104504,
+          "stop" : 1607515110984,
+          "duration" : 6480
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备IP不能为空'", "''", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.12-0-60-60-1-1-赵雅静-描述]",
+        "uid" : "6ac190009959a4ef",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515071451,
+          "stop" : 1607515078403,
+          "duration" : 6952
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.12'", "'60'", "1", "0" ]
+      }, {
+        "name" : "test_domain_model[45.250.34.12]",
+        "uid" : "19dd2ebf3831d6c5",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515149684,
+          "stop" : 1607515158646,
+          "duration" : 8962
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'45.250.34.12'" ]
+      }, {
+        "name" : "test_add_device[45.250.34.134-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "8df8307c943d31b7",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515044330,
+          "stop" : 1607515051085,
+          "duration" : 6755
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.134'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "69ead0d375111c70",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514746653,
+          "stop" : 1607514771902,
+          "duration" : 25249
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_delete_defence_group",
+        "uid" : "6241b824e55d3f94",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514578160,
+          "stop" : 1607514591916,
+          "duration" : 13756
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-------只填写名称]",
+        "uid" : "f6458d9881ad6151",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514652132,
+          "stop" : 1607514666283,
+          "duration" : 14151
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "'测试新增防御域1'", "'只填写名称'", "''", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "71d1bdcffa3afb88",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607514832483,
+          "stop" : 1607514858379,
+          "duration" : 25896
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device[45.250.34.133-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "e47e3678c709e992",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515051096,
+          "stop" : 1607515057312,
+          "duration" : 6216
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.133'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_delete_bag_grabbing_list",
+        "uid" : "b79f0edf6e94eeae",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514574245,
+          "stop" : 1607514578155,
+          "duration" : 3910
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_cluster[测试集群-描述：新建不启用的集群-0]",
+        "uid" : "c8e8cdddbd810b45",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514624341,
+          "stop" : 1607514628811,
+          "duration" : 4470
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'测试集群'", "'描述：新建不启用的集群'", "0" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.10-1-99-99-1-2-赵雅静-描述]",
+        "uid" : "2733671e583af448",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515085284,
+          "stop" : 1607515092116,
+          "duration" : 6832
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "2", "'99'", "'描述'", "'45.250.34.10'", "'99'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_success[CIDR格式的防御域-39.98.36.201-224-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "3f4ce5f91b5a3453",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514782895,
+          "stop" : 1607514788844,
+          "duration" : 5949
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'CIDR格式的防御域'", "''", "'39.98.36.201-224'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_device[45.250.34.12]",
+        "uid" : "bab3c02480682d14",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515135760,
+          "stop" : 1607515149677,
+          "duration" : 13917
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'45.250.34.12'" ]
+      }, {
+        "name" : "test_login",
+        "uid" : "cea2aa8226d71ef",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607514570425,
+          "stop" : 1607514574239,
+          "duration" : 3814
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "87ba33b88d997bd7",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607514858760,
+          "stop" : 1607514863998,
+          "duration" : 5238
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-单IP的防御域]",
+        "uid" : "20b9416e55ff5e7d",
+        "parentUid" : "f4f8c80b666aded03108f312970e9d46",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607515002413,
+          "stop" : 1607515011252,
+          "duration" : 8839
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-单IP的防御域'", "'单个重复'", "'39.98.36.106'", "'模板1'" ]
+      } ],
+      "uid" : "f4f8c80b666aded03108f312970e9d46"
+    }, {
+      "name" : "9292-MainThread",
+      "children" : [ {
+        "name" : "test_delete_defence_group",
+        "uid" : "7e4bb1b418063dd4",
+        "parentUid" : "4dd775477b67190310f3955c71ecf7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607525780535,
+          "stop" : 1607525784051,
+          "duration" : 3516
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_bag_grabbing_list",
+        "uid" : "121a38c0a11ab24a",
+        "parentUid" : "4dd775477b67190310f3955c71ecf7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607525777117,
+          "stop" : 1607525780529,
+          "duration" : 3412
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "77fb36f11e280a41",
+        "parentUid" : "4dd775477b67190310f3955c71ecf7ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607525784063,
+          "stop" : 1607525806988,
+          "duration" : 22925
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "87479e3fa40754da",
+        "parentUid" : "4dd775477b67190310f3955c71ecf7ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607525830364,
+          "stop" : 1607525852789,
+          "duration" : 22425
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_login",
+        "uid" : "872da115062133cb",
+        "parentUid" : "4dd775477b67190310f3955c71ecf7ab",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607525772358,
+          "stop" : 1607525777114,
+          "duration" : 4756
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "2c43875d8e327c9a",
+        "parentUid" : "4dd775477b67190310f3955c71ecf7ab",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607525807468,
+          "stop" : 1607525829996,
+          "duration" : 22528
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "4dd775477b67190310f3955c71ecf7ab"
+    }, {
+      "name" : "19808-MainThread",
+      "children" : [ {
+        "name" : "test_new_cluster[测试集群-描述：新建不启用的集群-0]",
+        "uid" : "1c6b7afd9acce783",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526173598,
+          "stop" : 1607526177915,
+          "duration" : 4317
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'测试集群'", "'描述：新建不启用的集群'", "0" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "50440c5ad7bcf80e",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526245400,
+          "stop" : 1607526252766,
+          "duration" : 7366
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_new_model[模板1-默认模板-]",
+        "uid" : "b0a87bf2692d3dcc",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526177934,
+          "stop" : 1607526182507,
+          "duration" : 4573
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_bag_grabbing_list",
+        "uid" : "a49f13b216feb251",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526133874,
+          "stop" : 1607526138046,
+          "duration" : 4172
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_delete_model",
+        "uid" : "8e8dd8e779109ade",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526154738,
+          "stop" : 1607526169285,
+          "duration" : 14547
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_disable_device",
+        "uid" : "820a1e7ce7418ac6",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526410171,
+          "stop" : 1607526418903,
+          "duration" : 8732
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_fail[-------]",
+        "uid" : "74e72600284a2638",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526186967,
+          "stop" : 1607526190399,
+          "duration" : 3432
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "''", "''", "''", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-39.98.36.1-11-999-1----只不填写集群]",
+        "uid" : "d15a1f6a38e60986",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526194123,
+          "stop" : 1607526198001,
+          "duration" : 3878
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "''", "''", "'测试新增防御域1'", "'只不填写集群'", "'39.98.36.1-11'", "''" ]
+      }, {
+        "name" : "test_add_device[45.250.34.131-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "727a6cd51b5d65c5",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526356997,
+          "stop" : 1607526363732,
+          "duration" : 6735
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.131'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_cluster[绍兴BGP集群-集群描述:新建启用的集群-1]",
+        "uid" : "a0799e8c11f16a1e",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526169294,
+          "stop" : 1607526173582,
+          "duration" : 4288
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'绍兴BGP集群'", "'集群描述:新建启用的集群'", "1" ]
+      }, {
+        "name" : "test_delete_defence_group",
+        "uid" : "3104d4e886316ccb",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526138052,
+          "stop" : 1607526141550,
+          "duration" : 3498
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "857e9a990655d896",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526327915,
+          "stop" : 1607526335587,
+          "duration" : 7672
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "4e3128941d727706",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526229847,
+          "stop" : 1607526244894,
+          "duration" : 15047
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-单IP的防御域]",
+        "uid" : "540d0bc7415816cb",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526291361,
+          "stop" : 1607526304262,
+          "duration" : 12901
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-单IP的防御域'", "'单个重复'", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_modify_conf[模板1]",
+        "uid" : "b2ae3bbb1cfcab9c",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526450604,
+          "stop" : 1607526622995,
+          "duration" : 172391
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "4f4bdfcc1b4ed4f5",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526205957,
+          "stop" : 1607526211499,
+          "duration" : 5542
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_success[CIDR格式的防御域-39.98.36.201-224-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "6abc27b88c38566c",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526211528,
+          "stop" : 1607526217505,
+          "duration" : 5977
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'CIDR格式的防御域'", "''", "'39.98.36.201-224'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_success[单IP的防御域-39.98.36.106-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "40880f8a228fee69",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526217528,
+          "stop" : 1607526223527,
+          "duration" : 5999
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'单IP的防御域'", "''", "'39.98.36.106'", "'模板1'" ]
+      }, {
+        "name" : "test_login",
+        "uid" : "293b316d73a39a7",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526128006,
+          "stop" : 1607526133868,
+          "duration" : 5862
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.132-1-60-60-1-1-赵雅静-设备已存在]",
+        "uid" : "df4f481f6e5ca228",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526402796,
+          "stop" : 1607526410150,
+          "duration" : 7354
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备已存在'", "'45.250.34.132'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_add_device_disabled[123-1-60-60-1-1-赵雅静-设备IP格式错误]",
+        "uid" : "73c8dcb7a1cbac88",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526389925,
+          "stop" : 1607526396334,
+          "duration" : 6409
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备IP格式错误'", "'123'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "2d48ec4612ae041e",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526260837,
+          "stop" : 1607526275681,
+          "duration" : 14844
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device[45.250.34.132-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "1d4546518b268f59",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526349859,
+          "stop" : 1607526356968,
+          "duration" : 7109
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.132'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1--999-1-绍兴BGP---不填写IP]",
+        "uid" : "b3a7ffed82b65f9c",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526198030,
+          "stop" : 1607526201815,
+          "duration" : 3785
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'不填写IP'", "''", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_success[多个单IP的防御域-39.98.36.100\n39.98.36.101\n39.98.36.102\n-1-100-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "b587b53e6c5b2052",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526223555,
+          "stop" : 1607526229822,
+          "duration" : 6267
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'多个单IP的防御域'", "''", "'39.98.36.100\n39.98.36.101\n39.98.36.102\n'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "b4841e8e5de73ee",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526319995,
+          "stop" : 1607526327500,
+          "duration" : 7505
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-------只填写名称]",
+        "uid" : "7249bd5c2d985260",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526190418,
+          "stop" : 1607526194094,
+          "duration" : 3676
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "'测试新增防御域1'", "'只填写名称'", "''", "''" ]
+      }, {
+        "name" : "test_enable_device",
+        "uid" : "9d2fd3ba798d81b3",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526418917,
+          "stop" : 1607526427362,
+          "duration" : 8445
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_domain_model[45.250.34.12]",
+        "uid" : "c60d37e85426ec9b",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526441880,
+          "stop" : 1607526450597,
+          "duration" : 8717
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'45.250.34.12'" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.9-1-60-60-1-1--告警接收人不能为空]",
+        "uid" : "5d6785bc3c318e8b",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526383867,
+          "stop" : 1607526389896,
+          "duration" : 6029
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "1", "'60'", "'告警接收人不能为空'", "'45.250.34.9'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_add_device_disabled[-1-60-60-1-1-赵雅静-设备IP不能为空]",
+        "uid" : "3c9d3a8f588b2c6c",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526396355,
+          "stop" : 1607526402768,
+          "duration" : 6413
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'设备IP不能为空'", "''", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-多个单IP的防御域:多个中存在一个重复]",
+        "uid" : "ee153457daeaec54",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526304296,
+          "stop" : 1607526319606,
+          "duration" : 15310
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'100'", "'绍兴BGP集群'", "'赵雅静'", "'重复-多个单IP的防御域'", "'多个中存在一个重复'", "'39.98.36.100\n39.98.36.101\n39.98.36.103\n'", "'模板1'" ]
+      }, {
+        "name" : "test_add_device[45.250.34.133-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "ea08cc11d9d2ad8e",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526342631,
+          "stop" : 1607526349838,
+          "duration" : 7207
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.133'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.12-0-60-60-1-1-赵雅静-描述]",
+        "uid" : "7ae13a04a6271c38",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526363748,
+          "stop" : 1607526370291,
+          "duration" : 6543
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.12'", "'60'", "1", "0" ]
+      }, {
+        "name" : "test_add_device[45.250.34.134-1-60-60-1-1-赵雅静-描述]",
+        "uid" : "e95e44044a2eb73a",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526335991,
+          "stop" : 1607526342601,
+          "duration" : 6610
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.134'", "'60'", "1", "1" ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "9d3539d68f207db2",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526141558,
+          "stop" : 1607526154734,
+          "duration" : 13176
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.11-1-60-60-0-1-赵雅静-描述]",
+        "uid" : "7385dd3a17de2aa",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526370323,
+          "stop" : 1607526377078,
+          "duration" : 6755
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "1", "'60'", "'描述'", "'45.250.34.11'", "'60'", "0", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-IP段格式的防御域:从IP段格式的IP中取一个]",
+        "uid" : "c4ea0eee09f20809",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526253143,
+          "stop" : 1607526260434,
+          "duration" : 7291
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-IP段格式的防御域'", "'从IP段格式的IP中取一个'", "'39.98.36.1'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_device[45.250.34.12]",
+        "uid" : "95d13bb7e294bdec",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526427370,
+          "stop" : 1607526441873,
+          "duration" : 14503
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'45.250.34.12'" ]
+      }, {
+        "name" : "test_new_model[模板2-默认模板-]",
+        "uid" : "154984e0a123c4b7",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526182524,
+          "stop" : 1607526186947,
+          "duration" : 4423
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板2'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "4596512b2e405ee3",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526283756,
+          "stop" : 1607526290970,
+          "duration" : 7214
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_repeat[重复-CIDR格式的防御域:范围有交集]",
+        "uid" : "4506628fad94cc54",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607526276084,
+          "stop" : 1607526283366,
+          "duration" : 7282
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'重复-CIDR格式的防御域'", "'范围有交集'", "'39.98.36.224-226'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "4acbeae4cde9f5ba",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526201845,
+          "stop" : 1607526205926,
+          "duration" : 4081
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_add_device_disabled[45.250.34.10-1-99-99-1-2-赵雅静-描述]",
+        "uid" : "a8b01926bf927718",
+        "parentUid" : "de66aa2edc66248f12942d164602d166",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607526377101,
+          "stop" : 1607526383839,
+          "duration" : 6738
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'赵雅静'", "2", "'99'", "'描述'", "'45.250.34.10'", "'99'", "1", "1" ]
+      } ],
+      "uid" : "de66aa2edc66248f12942d164602d166"
+    }, {
+      "name" : "10360-MainThread",
+      "children" : [ {
+        "name" : "test_delete_defence_group",
+        "uid" : "29757de5960076b6",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515902461,
+          "stop" : 1607515915800,
+          "duration" : 13339
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1--999-1-绍兴BGP---不填写IP]",
+        "uid" : "409cb108ac9fc73d",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515972869,
+          "stop" : 1607515976721,
+          "duration" : 3852
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'不填写IP'", "''", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_success[CIDR格式的防御域-39.98.36.201-224-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "b3aabaa4616e62fb",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516041414,
+          "stop" : 1607516056291,
+          "duration" : 14877
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'CIDR格式的防御域'", "''", "'39.98.36.201-224'", "'模板1'" ]
+      }, {
+        "name" : "test_new_cluster[测试集群-描述：新建不启用的集群-0]",
+        "uid" : "5f001dabaa4147d5",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515947499,
+          "stop" : 1607515952096,
+          "duration" : 4597
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'测试集群'", "'描述：新建不启用的集群'", "0" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-39.98.36.1-11-999-1----只不填写集群]",
+        "uid" : "f3a29fd1cdea991e",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515968774,
+          "stop" : 1607515972836,
+          "duration" : 4062
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "''", "''", "'测试新增防御域1'", "'只不填写集群'", "'39.98.36.1-11'", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_success[CIDR格式的防御域-39.98.36.201-224-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "31a28f8261ff0c60",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516026207,
+          "stop" : 1607516041028,
+          "duration" : 14821
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'CIDR格式的防御域'", "''", "'39.98.36.201-224'", "'模板1'" ]
+      }, {
+        "name" : "test_login",
+        "uid" : "dedf148fdaddb36c",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515874086,
+          "stop" : 1607515878320,
+          "duration" : 4234
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_model[模板1-默认模板-]",
+        "uid" : "6887d0b1b563e4b9",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515952109,
+          "stop" : 1607515956626,
+          "duration" : 4517
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板1'" ]
+      }, {
+        "name" : "test_new_model[模板2-默认模板-]",
+        "uid" : "3878a59a9cacd72d",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515956646,
+          "stop" : 1607515961510,
+          "duration" : 4864
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "'默认模板'", "'模板2'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[-------]",
+        "uid" : "7f50c09c2ae094a7",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515961528,
+          "stop" : 1607515965162,
+          "duration" : 3634
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "''", "''", "''", "''" ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "f75b9246356f5992",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607515995967,
+          "stop" : 1607516010619,
+          "duration" : 14652
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-22.22.22.22-999-1-绍兴BGP---错误的IP段]",
+        "uid" : "85a22c0977aa4c46",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515976749,
+          "stop" : 1607515980835,
+          "duration" : 4086
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'999'", "'1'", "'绍兴BGP'", "''", "'测试新增防御域1'", "'错误的IP段'", "'22.22.22.22'", "''" ]
+      }, {
+        "name" : "test_delete_bag_grabbing_list",
+        "uid" : "3ec4a9abe66f7aca",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "broken",
+        "time" : {
+          "start" : 1607515878326,
+          "stop" : 1607515898463,
+          "duration" : 20137
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_success[CIDR格式的防御域-39.98.36.201-224-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "2bb683369465bc7a",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516056675,
+          "stop" : 1607516071721,
+          "duration" : 15046
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'CIDR格式的防御域'", "''", "'39.98.36.201-224'", "'模板1'" ]
+      }, {
+        "name" : "test_new_defence_domain_fail[测试新增防御域1-------只填写名称]",
+        "uid" : "6be2e4a4eabb1911",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515965187,
+          "stop" : 1607515968748,
+          "duration" : 3561
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "''", "''", "''", "''", "'测试新增防御域1'", "'只填写名称'", "''", "''" ]
+      }, {
+        "name" : "test_delete_model",
+        "uid" : "b521732a92031d8d",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515929673,
+          "stop" : 1607515942966,
+          "duration" : 13293
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_cluster[绍兴BGP集群-集群描述:新建启用的集群-1]",
+        "uid" : "710cd1a0da41e913",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515942976,
+          "stop" : 1607515947486,
+          "duration" : 4510
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'绍兴BGP集群'", "'集群描述:新建启用的集群'", "1" ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "f9626b53d419dfd4",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607516010997,
+          "stop" : 1607516025842,
+          "duration" : 14845
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_bag_grabbing_list",
+        "uid" : "a795bb9691bc6821",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515898891,
+          "stop" : 1607515902454,
+          "duration" : 3563
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      }, {
+        "name" : "test_new_defence_domain_success[IP段格式的防御域-39.98.36.0/30-1-1-绍兴BGP集群-模板1-赵雅静-]",
+        "uid" : "2c2da468170ee587",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "failed",
+        "time" : {
+          "start" : 1607515980865,
+          "stop" : 1607515995594,
+          "duration" : 14729
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'1'", "'1'", "'绍兴BGP集群'", "'赵雅静'", "'IP段格式的防御域'", "''", "'39.98.36.0/30'", "'模板1'" ]
+      }, {
+        "name" : "test_delete_cluster",
+        "uid" : "e60aa964e53070c8",
+        "parentUid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8",
+        "status" : "passed",
+        "time" : {
+          "start" : 1607515915803,
+          "stop" : 1607515929667,
+          "duration" : 13864
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ ]
+      } ],
+      "uid" : "6975ef3ae7d9158fa63ff7f66f8f7ae8"
+    } ],
+    "uid" : "aa6debaf41892aa218052846c240cc2a"
+  } ]
+}

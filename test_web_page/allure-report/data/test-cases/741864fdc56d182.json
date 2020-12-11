@@ -1,0 +1,1403 @@
+{
+  "uid" : "741864fdc56d182",
+  "name" : "test_upgrade_version",
+  "fullName" : "test_web_page.test_config.TestConfig#test_upgrade_version",
+  "historyId" : "10438b929143153d123f1cbabb804e34",
+  "time" : {
+    "start" : 1607513856059,
+    "stop" : 1607513908736,
+    "duration" : 52677
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607513454327,
+      "stop" : 1607513459670,
+      "duration" : 5343
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "登录订单管理系统",
+      "time" : {
+        "start" : 1607513856060,
+        "stop" : 1607513858424,
+        "duration" : 2364
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "登录v6系统",
+        "time" : {
+          "start" : 1607513856060,
+          "stop" : 1607513858424,
+          "duration" : 2364
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "打开页面:'http://adminv5.test.nodevops.cn'",
+          "time" : {
+            "start" : 1607513856060,
+            "stop" : 1607513858411,
+            "duration" : 2351
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "url",
+            "value" : "'http://adminv5.test.nodevops.cn'"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//img[@alt=\"logo--full\"]'",
+          "time" : {
+            "start" : 1607513858411,
+            "stop" : 1607513858424,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找多个元素:类型-'xpath'，定位：'//img[@alt=\"logo--full\"]'",
+            "time" : {
+              "start" : 1607513858411,
+              "stop" : 1607513858424,
+              "duration" : 13
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//img[@alt=\"logo--full\"]'"
+            }, {
+              "name" : "time_wait",
+              "value" : "2"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//img[@alt=\"logo--full\"]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'http://adminv5.test.nodevops.cn'"
+        }, {
+          "name" : "login_name",
+          "value" : "'zhaoyajing'"
+        }, {
+          "name" : "login_pwd",
+          "value" : "'4726586z.'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 3,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 4,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "进入订单管理系统-重新订购新的套餐",
+      "time" : {
+        "start" : 1607513858424,
+        "stop" : 1607513894593,
+        "duration" : 36169
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "选择客服管理下的套餐列表",
+        "time" : {
+          "start" : 1607513858424,
+          "stop" : 1607513861596,
+          "duration" : 3172
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"客服管理\"]/following::i[1]'",
+          "time" : {
+            "start" : 1607513858424,
+            "stop" : 1607513858449,
+            "duration" : 25
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"客服管理\"]/following::i[1]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"套餐列表\"]/ancestor::a[contains(@href,\"advisory\")]'",
+          "time" : {
+            "start" : 1607513858493,
+            "stop" : 1607513858509,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"套餐列表\"]/ancestor::a[contains(@href,\"advisory\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "根据邮箱和套餐搜索用户的套餐：邮箱'1208010487@qq.com' 套餐：Web安全加速",
+        "time" : {
+          "start" : 1607513861596,
+          "stop" : 1607513871452,
+          "duration" : 9856
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"用户邮箱\"]'",
+          "time" : {
+            "start" : 1607513861597,
+            "stop" : 1607513861617,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//input[@placeholder=\"用户邮箱\"]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"套餐\"]/following-sibling::span//i'",
+          "time" : {
+            "start" : 1607513862907,
+            "stop" : 1607513862934,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//input[@placeholder=\"套餐\"]/following-sibling::span//i'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"Web安全加速\"]/preceding-sibling::label//span[1]/span'",
+          "time" : {
+            "start" : 1607513864061,
+            "stop" : 1607513864080,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"Web安全加速\"]/preceding-sibling::label//span[1]/span'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"套餐ID\"]'",
+          "time" : {
+            "start" : 1607513864208,
+            "stop" : 1607513864225,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//input[@placeholder=\"套餐ID\"]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"搜 索\"]/ancestor::button'",
+          "time" : {
+            "start" : 1607513866314,
+            "stop" : 1607513866331,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"搜 索\"]/ancestor::button'"
+          }, {
+            "name" : "time_wait",
+            "value" : "4"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "mail_address",
+          "value" : "'1208010487@qq.com'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 5,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "购买高级版套餐",
+        "time" : {
+          "start" : 1607513871452,
+          "stop" : 1607513894593,
+          "duration" : 23141
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"开通服务\"]/ancestor::a'",
+          "time" : {
+            "start" : 1607513871452,
+            "stop" : 1607513871474,
+            "duration" : 22
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"开通服务\"]/ancestor::a'"
+          }, {
+            "name" : "time_wait",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//input[contains(@fetchsuggestions,\"function\")]'",
+          "time" : {
+            "start" : 1607513872558,
+            "stop" : 1607513872577,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//input[contains(@fetchsuggestions,\"function\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "等待元素显示",
+          "time" : {
+            "start" : 1607513872779,
+            "stop" : 1607513878518,
+            "duration" : 5739
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//i[contains(@class,\"el-icon-loading\")]')"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//ul[contains(@id,\"el-autocomplete\")]/li'",
+          "time" : {
+            "start" : 1607513879530,
+            "stop" : 1607513879548,
+            "duration" : 18
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//ul[contains(@id,\"el-autocomplete\")]/li'"
+          }, {
+            "name" : "time_wait",
+            "value" : "4"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "等待元素显示",
+          "time" : {
+            "start" : 1607513879623,
+            "stop" : 1607513884644,
+            "duration" : 5021
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "locator",
+            "value" : "('xpath', '//ul[contains(@id,\"el-autocomplete\")]/li')"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//form[contains(@class,\"el-form form-box\") and not(contains(@style,\"none\"))]//span[text()=\"下一步\"]/..'",
+          "time" : {
+            "start" : 1607513886649,
+            "stop" : 1607513886663,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//form[contains(@class,\"el-form form-box\") and not(contains(@style,\"none\"))]//span[text()=\"下一步\"]/..'"
+          }, {
+            "name" : "time_wait",
+            "value" : "4"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"开通目的\"]/following-sibling::span//i'",
+          "time" : {
+            "start" : 1607513887754,
+            "stop" : 1607513887771,
+            "duration" : 17
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//input[@placeholder=\"开通目的\"]/following-sibling::span//i'"
+          }, {
+            "name" : "time_wait",
+            "value" : "4"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"试用开通\"]/..'",
+          "time" : {
+            "start" : 1607513887826,
+            "stop" : 1607513887840,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"试用开通\"]/..'"
+          }, {
+            "name" : "time_wait",
+            "value" : "4"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"产品\"]/following-sibling::span//i'",
+          "time" : {
+            "start" : 1607513888965,
+            "stop" : 1607513888976,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//input[@placeholder=\"产品\"]/following-sibling::span//i'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"Web安全加速\"]/parent::li'",
+          "time" : {
+            "start" : 1607513889040,
+            "stop" : 1607513889049,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"Web安全加速\"]/parent::li'"
+          }, {
+            "name" : "time_wait",
+            "value" : "4"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//input[@placeholder=\"套餐版本\"]/following-sibling::span//i'",
+          "time" : {
+            "start" : 1607513890213,
+            "stop" : 1607513890232,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//input[@placeholder=\"套餐版本\"]/following-sibling::span//i'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"高级版\"]/parent::li'",
+          "time" : {
+            "start" : 1607513890280,
+            "stop" : 1607513890296,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"高级版\"]/parent::li'"
+          }, {
+            "name" : "time_wait",
+            "value" : "4"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//form[contains(@class,\"el-form form-box\") and not(contains(@style,\"none\"))]//span[text()=\"下一步\"]/..'",
+          "time" : {
+            "start" : 1607513891383,
+            "stop" : 1607513891398,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//form[contains(@class,\"el-form form-box\") and not(contains(@style,\"none\"))]//span[text()=\"下一步\"]/..'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"开通套餐\"]/..'",
+          "time" : {
+            "start" : 1607513892478,
+            "stop" : 1607513892489,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"开通套餐\"]/..'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"ant-result-title\")]'",
+          "time" : {
+            "start" : 1607513894559,
+            "stop" : 1607513894578,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"ant-result-title\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "mail_address",
+          "value" : "'1208010487@qq.com'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 15,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 25,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "验证回源健康检查和tls版本回源之后会重新显示并恢复默认值",
+      "time" : {
+        "start" : 1607513894593,
+        "stop" : 1607513908736,
+        "duration" : 14143
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "打开页面:'http://yundun.test.nodevops.cn/console/home'",
+        "time" : {
+          "start" : 1607513894593,
+          "stop" : 1607513897225,
+          "duration" : 2632
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "url",
+          "value" : "'http://yundun.test.nodevops.cn/console/home'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 0,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "打开web安全加速，选择模块：'业务列表'",
+        "time" : {
+          "start" : 1607513897226,
+          "stop" : 1607513898379,
+          "duration" : 1153
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"WEB安全加速\"]/ancestor::div[contains(@class,\"FeMenuItemGroup\") and not(contains(@class,\"header\"))]'",
+          "time" : {
+            "start" : 1607513897226,
+            "stop" : 1607513897246,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[text()=\"WEB安全加速\"]/ancestor::div[contains(@class,\"FeMenuItemGroup\") and not(contains(@class,\"header\"))]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[contains(text(),\"WEB安全加速\")]/ancestor::div[contains(@class,\"open\")]//span[contains(text(),\"业务列表\")]/ancestor::a'",
+          "time" : {
+            "start" : 1607513898316,
+            "stop" : 1607513898336,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[contains(text(),\"WEB安全加速\")]/ancestor::div[contains(@class,\"open\")]//span[contains(text(),\"业务列表\")]/ancestor::a'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "module_name",
+          "value" : "'业务列表'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "校验元素内容:类型-'xpath'，定位：'//div[contains(text(),\"当前套餐版本\")]//button[contains(@class,\"popover\")]/span'，内容：'高级版'",
+        "time" : {
+          "start" : 1607513898380,
+          "stop" : 1607513898624,
+          "duration" : 244
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//div[contains(text(),\"当前套餐版本\")]//button[contains(@class,\"popover\")]/span'",
+          "time" : {
+            "start" : 1607513898380,
+            "stop" : 1607513898556,
+            "duration" : 176
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(text(),\"当前套餐版本\")]//button[contains(@class,\"popover\")]/span'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(text(),\"当前套餐版本\")]//button[contains(@class,\"popover\")]/span'"
+        }, {
+          "name" : "ele_text",
+          "value" : "'高级版'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "打开web安全加速，选择分组：'自动化测试使用'",
+        "time" : {
+          "start" : 1607513898624,
+          "stop" : 1607513906423,
+          "duration" : 7799
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'(//input)[2]/following::i[1]'",
+          "time" : {
+            "start" : 1607513898624,
+            "stop" : 1607513898648,
+            "duration" : 24
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'(//input)[2]/following::i[1]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//li[contains(text(),'自动化测试使用')]'",
+          "time" : {
+            "start" : 1607513900709,
+            "stop" : 1607513900728,
+            "duration" : 19
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//li[contains(text(),'自动化测试使用')]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "10"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "group_name",
+          "value" : "'自动化测试使用'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 2,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "选择网站:'www.lvluoyun.com'",
+        "time" : {
+          "start" : 1607513906423,
+          "stop" : 1607513906502,
+          "duration" : 79
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//a[text()=\"www.lvluoyun.com\"]/preceding::input[@type=\"checkbox\"][1]/..'",
+          "time" : {
+            "start" : 1607513906423,
+            "stop" : 1607513906434,
+            "duration" : 11
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//a[text()=\"www.lvluoyun.com\"]/preceding::input[@type=\"checkbox\"][1]/..'"
+          }, {
+            "name" : "time_wait",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "site_name",
+          "value" : "'www.lvluoyun.com'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "选择网站:'0922.lvluoyun.com'",
+        "time" : {
+          "start" : 1607513906502,
+          "stop" : 1607513906583,
+          "duration" : 81
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//a[text()=\"0922.lvluoyun.com\"]/preceding::input[@type=\"checkbox\"][1]/..'",
+          "time" : {
+            "start" : 1607513906502,
+            "stop" : 1607513906517,
+            "duration" : 15
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//a[text()=\"0922.lvluoyun.com\"]/preceding::input[@type=\"checkbox\"][1]/..'"
+          }, {
+            "name" : "time_wait",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "site_name",
+          "value" : "'0922.lvluoyun.com'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 1,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "确定操作中有：'批量配置'",
+        "time" : {
+          "start" : 1607513906583,
+          "stop" : 1607513907234,
+          "duration" : 651
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[contains(text(),\"更多操作\")]/i[contains(@class,\"el-icon-arrow-down\")]'",
+          "time" : {
+            "start" : 1607513906584,
+            "stop" : 1607513906600,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[contains(text(),\"更多操作\")]/i[contains(@class,\"el-icon-arrow-down\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//li[contains(text(),\"批量配置\")]'",
+          "time" : {
+            "start" : 1607513907174,
+            "stop" : 1607513907194,
+            "duration" : 20
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找多个元素:类型-'xpath'，定位：'//li[contains(text(),\"批量配置\")]'",
+            "time" : {
+              "start" : 1607513907174,
+              "stop" : 1607513907194,
+              "duration" : 20
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//li[contains(text(),\"批量配置\")]'"
+            }, {
+              "name" : "time_wait",
+              "value" : "2"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//li[contains(text(),\"批量配置\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//span[contains(text(),\"更多操作\")]/i[contains(@class,\"el-icon-arrow-down\")]'",
+          "time" : {
+            "start" : 1607513907194,
+            "stop" : 1607513907203,
+            "duration" : 9
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//span[contains(text(),\"更多操作\")]/i[contains(@class,\"el-icon-arrow-down\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "5"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "option_name",
+          "value" : "'批量配置'"
+        } ],
+        "hasContent" : true,
+        "stepsCount" : 4,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      }, {
+        "name" : "校验高级版有tls版本和回源健康检查按钮，并且redis中有回源健康检查",
+        "time" : {
+          "start" : 1607513907234,
+          "stop" : 1607513908736,
+          "duration" : 1502
+        },
+        "status" : "passed",
+        "steps" : [ {
+          "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"DmData-table\")]//tr[1]/td[2]//a'",
+          "time" : {
+            "start" : 1607513907234,
+            "stop" : 1607513907247,
+            "duration" : 13
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//div[contains(@class,\"DmData-table\")]//tr[1]/td[2]//a'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//h2[text()=\"回源请求时长\"]/../../div[2]//input'",
+          "time" : {
+            "start" : 1607513907313,
+            "stop" : 1607513907945,
+            "duration" : 632
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//h2[text()=\"回源请求时长\"]/../../div[2]//input'"
+          }, {
+            "name" : "time_wait",
+            "value" : "10"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//label[text()=\"回源失败次数\"]/following::input[1]'",
+          "time" : {
+            "start" : 1607513907945,
+            "stop" : 1607513907959,
+            "duration" : 14
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找多个元素:类型-'xpath'，定位：'//label[text()=\"回源失败次数\"]/following::input[1]'",
+            "time" : {
+              "start" : 1607513907945,
+              "stop" : 1607513907959,
+              "duration" : 14
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//label[text()=\"回源失败次数\"]/following::input[1]'"
+            }, {
+              "name" : "time_wait",
+              "value" : "2"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//label[text()=\"回源失败次数\"]/following::input[1]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "查找元素:类型-'xpath'，定位：'//a[contains(text(),\"高级配置\")]'",
+          "time" : {
+            "start" : 1607513907959,
+            "stop" : 1607513907975,
+            "duration" : 16
+          },
+          "status" : "passed",
+          "steps" : [ ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//a[contains(text(),\"高级配置\")]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 0,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        }, {
+          "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//label[contains(text(),\"支持的最小TLS版本\")]/following::input[1]'",
+          "time" : {
+            "start" : 1607513908524,
+            "stop" : 1607513908551,
+            "duration" : 27
+          },
+          "status" : "passed",
+          "steps" : [ {
+            "name" : "查找多个元素:类型-'xpath'，定位：'//label[contains(text(),\"支持的最小TLS版本\")]/following::input[1]'",
+            "time" : {
+              "start" : 1607513908524,
+              "stop" : 1607513908551,
+              "duration" : 27
+            },
+            "status" : "passed",
+            "steps" : [ ],
+            "attachments" : [ ],
+            "parameters" : [ {
+              "name" : "type",
+              "value" : "'xpath'"
+            }, {
+              "name" : "path",
+              "value" : "'//label[contains(text(),\"支持的最小TLS版本\")]/following::input[1]'"
+            }, {
+              "name" : "time_wait",
+              "value" : "2"
+            } ],
+            "hasContent" : true,
+            "stepsCount" : 0,
+            "attachmentsCount" : 0,
+            "shouldDisplayMessage" : false
+          } ],
+          "attachments" : [ ],
+          "parameters" : [ {
+            "name" : "type",
+            "value" : "'xpath'"
+          }, {
+            "name" : "path",
+            "value" : "'//label[contains(text(),\"支持的最小TLS版本\")]/following::input[1]'"
+          }, {
+            "name" : "time_wait",
+            "value" : "2"
+          } ],
+          "hasContent" : true,
+          "stepsCount" : 1,
+          "attachmentsCount" : 0,
+          "shouldDisplayMessage" : false
+        } ],
+        "attachments" : [ ],
+        "parameters" : [ ],
+        "hasContent" : true,
+        "stepsCount" : 7,
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "hasContent" : true,
+      "stepsCount" : 26,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 58,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607513908740,
+      "stop" : 1607513908740,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "hasContent" : false,
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "测试修改配置并校验配置是否生效"
+  }, {
+    "name" : "story",
+    "value" : "升高套餐版本"
+  }, {
+    "name" : "severity",
+    "value" : "critical"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=7)"
+  }, {
+    "name" : "tag",
+    "value" : "page"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_web_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_config"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestConfig"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "21672-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_web_page.test_config"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "critical",
+    "retries" : [ {
+      "uid" : "9ca2dd533b946f7b",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607507891103,
+        "stop" : 1607507937600,
+        "duration" : 46497
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "page", "run(order=7)" ]
+  },
+  "source" : "741864fdc56d182.json",
+  "parameterValues" : [ ]
+}

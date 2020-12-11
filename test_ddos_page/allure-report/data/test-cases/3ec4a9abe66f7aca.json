@@ -1,0 +1,355 @@
+{
+  "uid" : "3ec4a9abe66f7aca",
+  "name" : "test_delete_bag_grabbing_list",
+  "fullName" : "test_ddos_page.test_ddos.Test_Ddos#test_delete_bag_grabbing_list",
+  "historyId" : "cfc5e185324679ab4aa786cd026089f6",
+  "time" : {
+    "start" : 1607515878326,
+    "stop" : 1607515898463,
+    "duration" : 20137
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'click'",
+  "statusTrace" : "self = <test_ddos.Test_Ddos object at 0x000001AB54D464F0>\nbrowser = (<selenium.webdriver.chrome.webdriver.WebDriver (session=\"781776b780921748abac3c21146e3229\")>, {'ddos任务列表': <page.ddos...ww.lvluoyun.com', '0922.lvluoyun.com'], 'success_sign': 'ya-phone-fill', 'url': 'http://yundun.test.nodevops.cn', ...})\n\n    @pytest.mark.run(order=2)\n    @allure.story('批量删除所有的集群')\n    #@pytest.mark.skip\n    def test_delete_bag_grabbing_list(self, browser):\n        ddos_list = browser[1]['ddos任务列表']\n        ddos_cluster_page = browser[1]['ddos集群管理']\n        ddos_cluster_page.refresh()\n        ddos_list.click_menu('抓包工具')\n        sleep(1)\n        flag = not ddos_cluster_page.verify_element_exist('xpath', '//span[text()=\"暂无数据\"]',time_wait=4)\n        while flag:\n>           ddos_cluster_page.click_all()\n\ntest_ddos.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.ddos_cluster.Ddos_cluster object at 0x000001AB547040A0>\n\n    @allure.step('点击全选')\n    def click_all(self):\n>       self.find_element('xpath','//th//span[contains(@class,\"el-checkbox__input\")]', time_wait=10).click()\nE       AttributeError: 'NoneType' object has no attribute 'click'\n\n..\\page\\ddos_cluster.py:102: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1607515868724,
+      "stop" : 1607515874086,
+      "duration" : 5362
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'click'",
+    "statusTrace" : "self = <test_ddos.Test_Ddos object at 0x000001AB54D464F0>\nbrowser = (<selenium.webdriver.chrome.webdriver.WebDriver (session=\"781776b780921748abac3c21146e3229\")>, {'ddos任务列表': <page.ddos...ww.lvluoyun.com', '0922.lvluoyun.com'], 'success_sign': 'ya-phone-fill', 'url': 'http://yundun.test.nodevops.cn', ...})\n\n    @pytest.mark.run(order=2)\n    @allure.story('批量删除所有的集群')\n    #@pytest.mark.skip\n    def test_delete_bag_grabbing_list(self, browser):\n        ddos_list = browser[1]['ddos任务列表']\n        ddos_cluster_page = browser[1]['ddos集群管理']\n        ddos_cluster_page.refresh()\n        ddos_list.click_menu('抓包工具')\n        sleep(1)\n        flag = not ddos_cluster_page.verify_element_exist('xpath', '//span[text()=\"暂无数据\"]',time_wait=4)\n        while flag:\n>           ddos_cluster_page.click_all()\n\ntest_ddos.py:53: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <page.ddos_cluster.Ddos_cluster object at 0x000001AB547040A0>\n\n    @allure.step('点击全选')\n    def click_all(self):\n>       self.find_element('xpath','//th//span[contains(@class,\"el-checkbox__input\")]', time_wait=10).click()\nE       AttributeError: 'NoneType' object has no attribute 'click'\n\n..\\page\\ddos_cluster.py:102: AttributeError",
+    "steps" : [ {
+      "name" : "刷新网页",
+      "time" : {
+        "start" : 1607515878326,
+        "stop" : 1607515880999,
+        "duration" : 2673
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : false
+    }, {
+      "name" : "点击菜单：'抓包工具'",
+      "time" : {
+        "start" : 1607515881000,
+        "stop" : 1607515881193,
+        "duration" : 193
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/parent::div/..'",
+        "time" : {
+          "start" : 1607515881000,
+          "stop" : 1607515881021,
+          "duration" : 21
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/parent::div/..'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "获取元素指定属性的值:'className'",
+        "time" : {
+          "start" : 1607515881021,
+          "stop" : 1607515881028,
+          "duration" : 7
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "ele",
+          "value" : "<selenium.webdriver.remote.webelement.WebElement (session=\"781776b780921748abac3c21146e3229\", element=\"939431eb-0370-4e86-97b5-3589d576301f\")>"
+        }, {
+          "name" : "attr_name",
+          "value" : "'className'"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//span[text()=\"DDoS原生清洗\"]/following-sibling::i'",
+        "time" : {
+          "start" : 1607515881028,
+          "stop" : 1607515881040,
+          "duration" : 12
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"DDoS原生清洗\"]/following-sibling::i'"
+        }, {
+          "name" : "time_wait",
+          "value" : "5"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      }, {
+        "name" : "查找元素:类型-'xpath'，定位：'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"抓包工具\")]/ancestor::a'",
+        "time" : {
+          "start" : 1607515881111,
+          "stop" : 1607515881129,
+          "duration" : 18
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//div[contains(@class,\"FeMenuItemGroup__body\")]/div[not(contains(@style,\"none\"))]//span[contains(text(),\"抓包工具\")]/ancestor::a'"
+        }, {
+          "name" : "time_wait",
+          "value" : "2"
+        } ],
+        "attachmentsCount" : 0,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "menu_name",
+        "value" : "'抓包工具'"
+      } ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 4,
+      "hasContent" : true
+    }, {
+      "name" : "校验界面上是否存在某元素:类型-'xpath'，定位：'//span[text()=\"暂无数据\"]'",
+      "time" : {
+        "start" : 1607515882198,
+        "stop" : 1607515887828,
+        "duration" : 5630
+      },
+      "status" : "passed",
+      "steps" : [ {
+        "name" : "查找多个元素:类型-'xpath'，定位：'//span[text()=\"暂无数据\"]'",
+        "time" : {
+          "start" : 1607515882198,
+          "stop" : 1607515887828,
+          "duration" : 5630
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "3d77328e5e80c4ad",
+          "name" : "批量获取元素失败",
+          "source" : "3d77328e5e80c4ad.png",
+          "type" : "image/png",
+          "size" : 114857
+        } ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//span[text()=\"暂无数据\"]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "4"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ {
+        "name" : "type",
+        "value" : "'xpath'"
+      }, {
+        "name" : "path",
+        "value" : "'//span[text()=\"暂无数据\"]'"
+      }, {
+        "name" : "time_wait",
+        "value" : "4"
+      } ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "点击全选",
+      "time" : {
+        "start" : 1607515887828,
+        "stop" : 1607515898454,
+        "duration" : 10626
+      },
+      "status" : "broken",
+      "statusMessage" : "AttributeError: 'NoneType' object has no attribute 'click'\n",
+      "statusTrace" : "  File \"D:\\software\\python\\lib\\site-packages\\allure_commons\\_allure.py\", line 172, in impl\n    return func(*a, **kw)\n  File \"D:\\workspace\\pytest1\\page\\ddos_cluster.py\", line 102, in click_all\n    self.find_element('xpath','//th//span[contains(@class,\"el-checkbox__input\")]', time_wait=10).click()\n",
+      "steps" : [ {
+        "name" : "查找元素:类型-'xpath'，定位：'//th//span[contains(@class,\"el-checkbox__input\")]'",
+        "time" : {
+          "start" : 1607515887828,
+          "stop" : 1607515898454,
+          "duration" : 10626
+        },
+        "status" : "passed",
+        "steps" : [ ],
+        "attachments" : [ {
+          "uid" : "7bf030f49b4c1402",
+          "name" : "获取单个元素失败",
+          "source" : "7bf030f49b4c1402.png",
+          "type" : "image/png",
+          "size" : 118766
+        } ],
+        "parameters" : [ {
+          "name" : "type",
+          "value" : "'xpath'"
+        }, {
+          "name" : "path",
+          "value" : "'//th//span[contains(@class,\"el-checkbox__input\")]'"
+        }, {
+          "name" : "time_wait",
+          "value" : "10"
+        } ],
+        "attachmentsCount" : 1,
+        "shouldDisplayMessage" : false,
+        "stepsCount" : 0,
+        "hasContent" : true
+      } ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 1,
+      "hasContent" : true
+    }, {
+      "name" : "添加失败截图...",
+      "time" : {
+        "start" : 1607515898537,
+        "stop" : 1607515898887,
+        "duration" : 350
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2ce41da7331df065",
+        "name" : "失败截图",
+        "source" : "2ce41da7331df065.png",
+        "type" : "image/png",
+        "size" : 118766
+      } ],
+      "parameters" : [ ],
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 11,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1607516081789,
+      "stop" : 1607516081789,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "ddos页面的测试"
+  }, {
+    "name" : "story",
+    "value" : "批量删除所有的集群"
+  }, {
+    "name" : "tag",
+    "value" : "run(order=2)"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_ddos_page"
+  }, {
+    "name" : "suite",
+    "value" : "test_ddos"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_Ddos"
+  }, {
+    "name" : "host",
+    "value" : "LAPTOP-HRAELMRK"
+  }, {
+    "name" : "thread",
+    "value" : "10360-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_ddos_page.test_ddos"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "run(order=2)" ]
+  },
+  "source" : "3ec4a9abe66f7aca.json",
+  "parameterValues" : [ ]
+}

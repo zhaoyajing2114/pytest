@@ -1,0 +1,22 @@
+{
+  "f39ed416e4a0369668795dd40e202059" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "43af86662ff23132",
+      "status" : "broken",
+      "statusDetails" : "KeyError: 'case_path'",
+      "time" : {
+        "start" : 1607593292057,
+        "stop" : 1607593292057,
+        "duration" : 0
+      }
+    } ]
+  }
+}

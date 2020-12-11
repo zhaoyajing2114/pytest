@@ -1,0 +1,111 @@
+[ {
+  "uid" : "7868c1caee3c4c15",
+  "name" : "test_proxy_keepalive[关闭]",
+  "time" : {
+    "start" : 1607513667844,
+    "stop" : 1607513707419,
+    "duration" : 39575
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "b3f19b4d1b5af67c",
+  "name" : "test_https_default[0]",
+  "time" : {
+    "start" : 1607513707433,
+    "stop" : 1607513749743,
+    "duration" : 42310
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "c06c8a8253963abd",
+  "name" : "test_health[100-99-123]",
+  "time" : {
+    "start" : 1607513547027,
+    "stop" : 1607513587747,
+    "duration" : 40720
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "8e22a9000453305f",
+  "name" : "test_https_default[1]",
+  "time" : {
+    "start" : 1607513749759,
+    "stop" : 1607513790304,
+    "duration" : 40545
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "741864fdc56d182",
+  "name" : "test_upgrade_version",
+  "time" : {
+    "start" : 1607513856059,
+    "stop" : 1607513908736,
+    "duration" : 52677
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "e0d6d80ada36ec0",
+  "name" : "test_proxy_keepalive[开启]",
+  "time" : {
+    "start" : 1607513628552,
+    "stop" : 1607513667828,
+    "duration" : 39276
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "633baeaaa0fccb7",
+  "name" : "test_proxy_connect_timeout[55]",
+  "time" : {
+    "start" : 1607513467309,
+    "stop" : 1607513507867,
+    "duration" : 40558
+  },
+  "status" : "passed",
+  "severity" : "trivial"
+}, {
+  "uid" : "88e526fa7720f51a",
+  "name" : "test_reduce_version",
+  "time" : {
+    "start" : 1607513790321,
+    "stop" : 1607513856047,
+    "duration" : 65726
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "20be3178e1110fd2",
+  "name" : "test_login",
+  "time" : {
+    "start" : 1607513459670,
+    "stop" : 1607513467304,
+    "duration" : 7634
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "79e763e173ac53e1",
+  "name" : "test_health[23-23-23]",
+  "time" : {
+    "start" : 1607513587768,
+    "stop" : 1607513628531,
+    "duration" : 40763
+  },
+  "status" : "passed",
+  "severity" : "critical"
+}, {
+  "uid" : "6ad29caec7c0b212",
+  "name" : "test_proxy_connect_timeout[66]",
+  "time" : {
+    "start" : 1607513507882,
+    "stop" : 1607513547011,
+    "duration" : 39129
+  },
+  "status" : "passed",
+  "severity" : "trivial"
+} ]
