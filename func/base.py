@@ -18,7 +18,7 @@ class Base:
         '''
         try:
             random_num = int(random.random() * 10)
-            img_path = os.path.join('D:\workspace\pytest1\image',str(time.strftime("%Y%m%d%H%M%S",))+str(random_num) + '.png')
+            img_path = os.path.join(os.getcwd(),str(time.strftime("%Y%m%d%H%M%S",))+str(random_num) + '.png')
             self.driver.get_screenshot_as_file(img_path)
             img = open(img_path,'rb').read()
             allure.attach(img, name, allure.attachment_type.PNG)
@@ -35,7 +35,7 @@ class Base:
         '''
         try:
             random_num = int(random.random()*100)
-            img_path = os.path.join('D:\workspace\pytest1\image', str(time.strftime("%Y%m%d%H%M%S", ))+str(random_num) + '.png')
+            img_path = os.path.join(os.getcwd(), str(time.strftime("%Y%m%d%H%M%S", ))+str(random_num) + '.png')
             element.screenshot(img_path)
             img = open(img_path, 'rb').read()
             allure.attach(img, name, allure.attachment_type.PNG)
